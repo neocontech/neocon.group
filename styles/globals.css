@@ -160,3 +160,31 @@ a {
   width: 100%;
   /* background-position: right bottom; */
 }
+/* .hero_asset {
+  background-image: url(../public/assets/homepage/hero_asset.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+.slider_img_w {
+  width: 38.7px;
+  height: 132.01px;
+}
+.custom-splide .splide__arrow {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+
+  /* color: white;
+  fill: white; */
+}
+.custom-splide .splide__arrow svg {
+  fill: white;
+  height: 10px;
+  width: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .custom-splide .splide__pagination {
+    bottom: -2em;
+  }
+}

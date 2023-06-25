@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FiCircle, FiMenu, FiX } from "react-icons/fi";
+import { FiCircle, FiX } from "react-icons/fi";
 import { HiMenuAlt3 } from "react-icons/hi";
 import NeoconGroup from "../../public/neocon-group.png";
 
@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="fixed z-50 w-full bg-white backdrop-blur-lg ">
+      <div className="sticky z-50 top-0 left-0 right-0 w-full">
         <div className="px-10">
           <div className="py-5">
             <div className="flex justify-between">
@@ -26,7 +26,7 @@ function Navbar() {
                 />
               </Link>
               <div className="flex flex-row my-auto">
-                <div className="flex md:hidden">
+                <div className="hidden xsm:block sm:block">
                   {isMobileMenuOpen ? (
                     <FiX
                       className="my-auto text-2xl text-ngl_black"
@@ -39,7 +39,7 @@ function Navbar() {
                     />
                   )}
                 </div>
-                <div className="hidden md:flex flex-row my-auto">
+                <div className="xsm:hidden sm:hidden flex flex-row xsm:flex-col sm:flex-col my-auto">
                   <Link href="/comapny" className="flex flex-row mx-5">
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Company</p>
