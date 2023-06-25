@@ -114,13 +114,13 @@ function Hero() {
                     </span>
                   </p>
                 </div>
-                {/* <div className="absolute -top-10 left-80 ml-10">
+                <div className="absolute -top-10 left-80 ml-10">
                   <Image
                     src={Heroasset}
                     alt="hero asset .png"
                     className="w-[363px] h-[321px] xsm:w-20 sm:w-20 xsm:h-20 sm:h-20"
                   />
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="flex flex-col text-ngl_black">
