@@ -107,3 +107,6 @@ a {
 } */
 
 @import "@fontsource/plus-jakarta-sans";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
