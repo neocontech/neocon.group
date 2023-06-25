@@ -105,8 +105,8 @@ function Hero() {
           <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20">
             <div className="col-span-2 xsm:col-span-1 sm:col-span-1 ">
               <div className="relative">
-                <div className="w-2/3">
-                  <p className="text-text_56 font-semibold leading-tight">
+                <div className="w-2/3 xsm:w-auto sm:w-auto">
+                  <p className="text-text_56 xsm:text-sm sm:text-sm font-semibold leading-tight">
                     We are a team that <br />
                     put all of your options <br /> in one{" "}
                     <span className="text-ngl_orange">
@@ -114,13 +114,13 @@ function Hero() {
                     </span>
                   </p>
                 </div>
-                <div className="absolute -top-10 left-80 ml-10">
+                {/* <div className="absolute -top-10 left-80 ml-10">
                   <Image
                     src={Heroasset}
                     alt="hero asset .png"
-                    className="w-[363px] h-[321px]"
+                    className="w-[363px] h-[321px] xsm:w-20 sm:w-20 xsm:h-20 sm:h-20"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="flex flex-col text-ngl_black">
