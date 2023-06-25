@@ -184,6 +184,21 @@ a {
   width: 10px;
 }
 @media only screen and (max-width: 768px) {
+  .custom-splide .splide__arrow {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    margin-left: -26px;
+    margin-right: -26px;
+  
+    /* color: white;
+    fill: white; */
+  }
+  .custom-splide .splide__arrow svg {
+    fill: white;
+    height: 10px;
+    width: 10px;
+  }
   .custom-splide .splide__pagination {
     bottom: -2em;
   }

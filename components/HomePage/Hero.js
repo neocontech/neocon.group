@@ -48,19 +48,19 @@ const SlideList = [
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showArrows, setShowArrows] = useState(true);
-  const [showPagination, setShowPagination] = useState(false);
+  // const [showPagination, setShowPagination] = useState(false);
   const [perPage, setPerPage] = useState(4);
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 768) {
-        setShowArrows(false);
-        setShowPagination(true);
+        setShowArrows(true);
+        // setShowPagination(true);
         setPerPage(1);
       } else {
         setShowArrows(true);
-        setShowPagination(false);
+        // setShowPagination(false);
         setPerPage(3);
       }
     };
@@ -81,7 +81,8 @@ function Hero() {
     speed: 2000,
     interval: 4000,
     arrows: showArrows,
-    pagination: showPagination,
+    pagination: false,
+    // pagination: showPagination,
     start: currentSlide,
   };
   const videoPath = "/website-promo.mp4";
@@ -100,25 +101,28 @@ function Hero() {
   }, []);
   return (
     <>
-      <div className="px-10">
+      <div className="px-10 xsm:px-5 sm:px-5">
         <div className="py-20">
-          <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20">
+          <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20 xsm:pt-0 sm:pt-0">
             <div className="col-span-2 xsm:col-span-1 sm:col-span-1 ">
               <div className="relative">
                 <div className="w-2/3 xsm:w-auto sm:w-auto">
-                  <p className="text-text_56 xsm:text-sm sm:text-sm font-semibold leading-tight">
-                    We are a team that <br />
-                    put all of your options <br /> in one{" "}
+                  <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
+                    We are a team <br className="hidden xsm:block sm:block" /> that{" "}
+                    <br className="block xsm:hidden sm:hidden" />
+                    put all of your options{" "}
+                    <br className="block xsm:hidden sm:hidden" />
+                    in one{" "}
                     <span className="text-ngl_orange">
                       convenient location.
                     </span>
                   </p>
                 </div>
-                <div className="absolute -top-10 left-80 ml-10">
+                <div className="absolute -top-10 xsm:-top-7 sm:-top-7 left-80 ml-20 xsm:left-0 xsm:ml-40 sm:left-0 sm:ml-40 xsm:hidden sm:hidden block">
                   <Image
                     src={Heroasset}
                     alt="hero asset .png"
-                    className="w-[363px] h-[321px] xsm:w-20 sm:w-20 xsm:h-20 sm:h-20"
+                    className="w-[363px] h-[321px] xsm:w-[247px] sm:w-[247px] xsm:h-[263px] sm:h-[263px]"
                   />
                 </div>
               </div>
@@ -128,7 +132,7 @@ function Hero() {
                 <Image
                   src={Numberimg}
                   alt="numver img"
-                  className="w-40 h-auto"
+                  className="w-40 xsm:w-20 sm:w-20 h-auto"
                 />
               </div>
               <p className="text-ngl_gray py-5">
@@ -151,7 +155,7 @@ function Hero() {
               <div className="pt-20">
                 <Splide
                   options={splideOptions}
-                  className="px-10  custom-splide "
+                  className="px-10 xsm:px-0 sm:px-0 custom-splide "
                 >
                   {SlideList.map((slide, index) => (
                     <SplideSlide key={index}>
@@ -162,7 +166,7 @@ function Hero() {
                           index % 2 === 0 ? "text-ngl_black" : "text-ngl_white"
                         }`}
                       >
-                        <div className="flex flex-col font-semibold w-3/5 my-auto">
+                        <div className="flex flex-col font-semibold w-3/5 xsm:w-auto sm:w-auto my-auto">
                           <p className="text-lg">{slide.header}</p>
                           <p className="text-sm">{slide.date}</p>
                         </div>
