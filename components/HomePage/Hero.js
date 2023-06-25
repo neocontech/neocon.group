@@ -6,6 +6,7 @@ import { FaStarOfLife } from "react-icons/fa";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import Numberimg from "../../public/assets/homepage/125.png";
 import SliderLogo from "../../public/assets/homepage/90deglogo.png";
+import Heroasset from "../../public/assets/homepage/hero_asset.png";
 const SlideList = [
   {
     id: 1,
@@ -100,20 +101,26 @@ function Hero() {
   return (
     <>
       <div className="px-10">
-        <div className="">
-          <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6">
-            <div className="col-span-2 xsm:col-span-1 sm:col-span-1 w-2/3">
-              <div>
-                {/* <div className="flex justify-end">
-                  <div className="flex justify-between bg-ngl_white w-32 py-2 px-4 rounded-xl text-ngl_black rotate-[10deg] text-base">
-                    <p>Gateway</p>
-                    <FaStarOfLife size={10} className="my-auto" />
-                  </div>
-                </div> */}
-                <p className="text-text_56 font-semibold leading-tight">
-                  We are a team that put all of your options in one{" "}
-                  <span className="text-ngl_orange">convenient location.</span>
-                </p>
+        <div className="py-20">
+          <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20">
+            <div className="col-span-2 xsm:col-span-1 sm:col-span-1 ">
+              <div className="relative">
+                <div className="w-2/3">
+                  <p className="text-text_56 font-semibold leading-tight">
+                    We are a team that <br />
+                    put all of your options <br /> in one{" "}
+                    <span className="text-ngl_orange">
+                      convenient location.
+                    </span>
+                  </p>
+                </div>
+                <div className="absolute -top-10 left-80 ml-10">
+                  <Image
+                    src={Heroasset}
+                    alt="hero asset .png"
+                    className="w-[363px] h-[321px]"
+                  />
+                </div>
               </div>
             </div>
             <div className="flex flex-col text-ngl_black">
