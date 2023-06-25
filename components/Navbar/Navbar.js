@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiCircle, FiMenu, FiX } from "react-icons/fi";
-import {HiMenuAlt3} from "react-icons/hi"
+import { HiMenuAlt3 } from "react-icons/hi";
 import NeoconGroup from "../../public/neocon-group.png";
 
 function Navbar() {
@@ -41,19 +41,19 @@ function Navbar() {
                 </div>
                 <div className="hidden md:flex flex-row my-auto">
                   <Link href="/comapny" className="flex flex-row mx-5">
-                    <FiCircle className="my-auto text-xs text-ngl_orange" />
+                    <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Company</p>
                   </Link>
                   <Link href="/business" className="flex flex-row mx-5">
-                    <FiCircle className="my-auto text-xs text-ngl_orange" />
+                    <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Our Business</p>
                   </Link>
                   <Link href="/news" className="flex flex-row mx-5">
-                    <FiCircle className="my-auto text-xs text-ngl_orange" />
+                    <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">News Room</p>
                   </Link>
                   <Link href="/contact" className="flex flex-row mx-5">
-                    <FiCircle className="my-auto text-xs text-ngl_orange" />
+                    <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Contact Us</p>
                   </Link>
                 </div>
