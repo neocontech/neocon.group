@@ -1,6 +1,6 @@
-import HomepageMainsection from "@/components/HomePage/HomepageMainsection";
 import Head from "next/head";
 import Image from "next/image";
+import Main from "./main";
 // import { Inter } from "next/font/google";
 // import styles from "@/styles/Home.module.css";
 
@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomepageMainsection />
+      <Main />
       {/* <p className="text-text_56 text-ngl_orange">fahad</p> */}
     </>
   );

@@ -148,3 +148,15 @@ a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 900;
 }
+/* homepage */
+.landing_bg {
+  background-image: url(../public/assets/homepage/landing-main-asset.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* background-position: right bottom; */
+}
