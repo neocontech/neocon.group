@@ -72,12 +72,12 @@ function Footer() {
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
                   <Image
-                    src={ino}
+                    src={get}
                     alt="company logo png"
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
                   <Image
-                    src={ino}
+                    src={tech}
                     alt="company logo png"
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
