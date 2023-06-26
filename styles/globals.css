@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +104,113 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* @import "@fontsource/plus-jakarta-sans"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap");
+
+/* Regular */
+.font-regular {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* Medium */
+.font-medium {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* Semibold */
+.font-semibold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* Bold */
+.font-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Extrabold */
+.font-extrabold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+}
+
+/* Black */
+.font-black {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+}
+/* homepage */
+.landing_bg {
+  background-image: url(../public/assets/homepage/landing-main-asset.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* background-position: right bottom; */
+}
+/* .hero_asset {
+  background-image: url(../public/assets/homepage/hero_asset.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+.slider_img_w {
+  width: 38.7px;
+  height: 132.01px;
+}
+.custom-splide .splide__arrow {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+
+  /* color: white;
+  fill: white; */
+}
+.custom-splide .splide__arrow svg {
+  fill: white;
+  height: 10px;
+  width: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .custom-splide .splide__arrow {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    margin-left: -26px;
+    margin-right: -26px;
+  
+    /* color: white;
+    fill: white; */
+  }
+  .custom-splide .splide__arrow svg {
+    fill: white;
+    height: 10px;
+    width: 10px;
+  }
+  .custom-splide .splide__pagination {
+    bottom: -2em;
+  }
+}
+
+.mission_vission_b{
+  background-image: url(../public/assets/aboutus/big.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mission_vission_s{
+  background-image: url(../public/assets/aboutus/small.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
