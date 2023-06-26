@@ -6,7 +6,6 @@ import Mission from "../../public/assets/aboutus/mission.png";
 import Vision from "../../public/assets/aboutus/vision.png";
 import Bigimg from "../../public/assets/aboutus/big.png";
 import Smallimg from "../../public/assets/aboutus/small.png";
-import Small from "../../public/assets/aboutus/small.png";
 
 function Aboutus() {
   return (

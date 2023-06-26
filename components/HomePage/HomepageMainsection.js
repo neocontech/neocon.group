@@ -4,6 +4,7 @@ import Feedback from "./Feedback";
 import Aboutus from "./Aboutus";
 import Concerns from "./Concerns";
 import Contact from "./Contact";
+import News from "./News";
 
 function HomepageMainsection() {
   return (
@@ -13,6 +14,7 @@ function HomepageMainsection() {
         <Feedback />
         <Aboutus />
         <Concerns />
+        <News />
         <Contact />
       </div>
     </>
