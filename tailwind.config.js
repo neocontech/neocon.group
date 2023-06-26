@@ -21,12 +21,14 @@ module.exports = {
     },
     fontSize: {
       text_56: "56px",
+      text_51: "51px",
       sm: "14px",
       base: "16px",
       lg: "18px",
       xl: "20px",
       "2xl": "24px",
       "3xl": "36px",
+      "32xl": "32px",
     },
 
     screens: {
