@@ -108,8 +108,8 @@ function Hero() {
               <div className="relative">
                 <div className="w-2/3 xsm:w-auto sm:w-auto">
                   <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
-                    We are a team <br className="hidden xsm:block sm:block" /> that{" "}
-                    <br className="block xsm:hidden sm:hidden" />
+                    We are a team <br className="hidden xsm:block sm:block" />{" "}
+                    that <br className="block xsm:hidden sm:hidden" />
                     put all of your options{" "}
                     <br className="block xsm:hidden sm:hidden" />
                     in one{" "}
@@ -127,7 +127,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col text-ngl_black">
+            <div className="flex flex-col text-ngl_black xsm:hidden sm:hidden">
               <div>
                 <Image
                   src={Numberimg}
@@ -151,7 +151,7 @@ function Hero() {
                 <BsStarHalf />
               </div>
             </div>
-            <div className="col-span-2 xsm:col-span-1 sm:col-span-1">
+            <div className="col-span-2 xsm:col-span-1 sm:col-span-1 block xsm:hidden sm:hidden">
               <div className="pt-20">
                 <Splide
                   options={splideOptions}
@@ -184,7 +184,65 @@ function Hero() {
                 </Splide>
               </div>
             </div>
-            <div className="">
+
+            <div className="col-span-2 xsm:col-span-1 sm:col-span-1 hidden xsm:block sm:block">
+              <div className="pt-20">
+                <Splide
+                  options={splideOptions}
+                  className="px-10 xsm:px-0 sm:px-0 custom-splide "
+                >
+                  {SlideList.map((slide, index) => (
+                    <SplideSlide key={index}>
+                      <div
+                        className={`flex justify-between p-6 mx-2 rounded-xl ${
+                          index % 2 === 0 ? "bg-ngl_orange" : "bg-ngl_black"
+                        } ${
+                          index % 2 === 0 ? "text-ngl_black" : "text-ngl_white"
+                        }`}
+                      >
+                        <div className="flex flex-col font-semibold w-3/5 xsm:w-auto sm:w-auto my-auto">
+                          <p className="text-lg">{slide.header}</p>
+                          <p className="text-sm">{slide.date}</p>
+                        </div>
+
+                        <div className="">
+                          <Image
+                            src={slide.image}
+                            alt="slider img"
+                            className="mx-auto slider_img_w xsm:w-auto xsm:h-auto"
+                          />
+                        </div>
+                      </div>
+                    </SplideSlide>
+                  ))}
+                </Splide>
+              </div>
+            </div>
+            <div className="flex flex-col text-ngl_black hidden xsm:block sm:block">
+              <div>
+                <Image
+                  src={Numberimg}
+                  alt="numver img"
+                  className="w-40 xsm:w-20 sm:w-20 h-auto"
+                />
+              </div>
+              <p className="text-ngl_gray py-5">
+                Already 125 companies around the world have approached us to
+                modernize their business platform.
+              </p>
+              <div className="flex flex-row pb-2">
+                <p className="text-ngl_orange">4.9</p>
+                <p className="pl-2">Positive rating</p>
+              </div>
+              <div className="flex flex-row text-ngl_orange">
+                <BsStarFill />
+                <BsStarFill />
+                <BsStarFill />
+                <BsStarFill />
+                <BsStarHalf />
+              </div>
+            </div>
+            <div>
               <video
                 className="w-auto h-auto rounded-3xl"
                 controls
