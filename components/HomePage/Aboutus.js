@@ -14,10 +14,7 @@ function Aboutus() {
         <div className="pb-20">
           <div className="flex flex-row">
             <div className="w-5 block xsm:hidden sm:hidden">
-              <BiSquareRounded
-                size={20}
-                className="text-ngl_orange mt-7 "
-              />
+              <BiSquareRounded size={20} className="text-ngl_orange mt-7 " />
             </div>
 
             <div className="w-full">
@@ -25,36 +22,54 @@ function Aboutus() {
                 <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
                   About Us
                 </p>
-                <p className="font-regular text-ngl_black text-base">
-                  Lorem ipsum dolor sit amet consectetur. Consequat tellus nisi
-                  justo morbi. Facilisi at facilisis orci mattis tellus. Aliquam
-                  condimentum aenean ipsum nunc libero libero. Suspendisse
-                  mauris enim pulvinar gravida urna imperdiet praesent semper.
-                  Elementum enim est arcu pharetra convallis arcu malesuada.
-                  Cursus dolor massa sit arcu pretium. Fringilla ut egestas nec
-                  morbi pretium a in blandit potenti. Morbi at amet blandit nunc
-                  hac. Arcu laoreet libero vitae lorem odio massa cursus ornare.
-                </p>
+                <div className="font-regular text-ngl_black text-base">
+                  <p>
+                    At Neocon Group, we are at the forefront of driving
+                    innovation and transforming the digital landscape. As a
+                    leading conglomerate, we bring together a diverse range of
+                    expertise in stock market securities, internet services, and
+                    Software Company to create a seamless ecosystem that shapes
+                    the future.
+                  </p>
+                  <p className="py-2">
+                    Neocon Group is dedicated to delivering exceptional services
+                    and solutions that meet the evolving needs of our clients.
+                    Through our network of companies, we offer a comprehensive
+                    suite of services, including state-of-the-art internet
+                    connectivity, robust data center infrastructure, and
+                    next-generation technologies.
+                  </p>
+                  <p>
+                    With our unwavering commitment to excellence, Neocon Group
+                    fosters a culture of innovation, collaboration, and
+                    continuous growth. Our talented team of professionals is
+                    driven by a shared passion for pushing boundaries and
+                    embracing emerging trends, ensuring that we remain at the
+                    forefront of industry advancements.
+                  </p>
+                </div>
               </div>
 
               <div>
                 <div className="grid grid-cols-2 xsm:grid-cols-1 sm:grid-cols-1  gap-6 py-5">
                   <div>
-                    <div className="bg-ngl_white rounded-xl relative">
+                    <div className="bg-ngl_white rounded-xl relative h-full">
                       <div className="flex justify-between xsm:flex-col sm:flex-col">
-                        <div className="w-full p-5">
+                        <div className="w-full  p-5">
                           <p className="text-ngl_black text-2xl font-semibold">
                             Mission
                           </p>
                           <p className="text-ngl_gray font-regular text-base">
-                            Lorem ipsum dolor sit amet consectetur. Eros mattis
-                            nibh habitasse ultricies mi volutpat. Volutpat
-                            tristique in nec lectus orci lobortis congue.
-                            Curabitur facilisis. Lorem ipsum dolor sit amet
-                            consectetur.
+                            At Neocon Group, our mission is to revolutionize the
+                            digital landscape by empowering individuals,
+                            businesses, and industries with innovative
+                            solutions. We strive to bridge the gap between
+                            technology and practical application, accelerating
+                            progress and transforming the way people live, work,
+                            and connect.
                           </p>
                         </div>
-                        <div className="w-2/12 xsm:w-auto sm:w-auto pt-12 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
+                        <div className="w-2/12 xsm:w-auto sm:w-auto pt-20 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
                           <div className="">
                             <Image
                               src={Mission}
@@ -64,7 +79,7 @@ function Aboutus() {
                           </div>
                         </div>
                       </div>
-                      <div className="absolute top-0 xsm:top-28 sm:top-28 right-0 xsm:mt-2 sm:mt-2">
+                      <div className="absolute bottom-0 right-0 xsm:mt-2 sm:mt-2">
                         <Image
                           src={Bigimg}
                           alt="big image png"
@@ -74,21 +89,27 @@ function Aboutus() {
                     </div>
                   </div>
                   <div>
-                    <div className="bg-ngl_white rounded-xl relative">
+                    <div className="bg-ngl_white rounded-xl relative h-full">
                       <div className="flex justify-between xsm:flex-col sm:flex-col">
                         <div className="w-full p-5">
                           <p className="text-ngl_black text-2xl font-semibold">
                             Vision
                           </p>
                           <p className="text-ngl_gray font-regular text-base">
-                            Lorem ipsum dolor sit amet consectetur. Eros mattis
-                            nibh habitasse ultricies mi volutpat. Volutpat
-                            tristique in nec lectus orci lobortis congue.
-                            Curabitur facilisis. Lorem ipsum dolor sit amet
-                            consectetur.
+                            Our vision at Neocon Group is to be a catalyst for
+                            change, driving the digital future with visionary
+                            leadership and cutting-edge technologies. We
+                            envision a world where seamless connectivity and
+                            advanced solutions enable limitless possibilities,
+                            empowering individuals and organizations to thrive
+                            in the digital era. Through our relentless pursuit
+                            of innovation, collaboration, and excellence, we
+                            aspire to shape a future where technology enhances
+                            every aspect of human life and propels society
+                            towards new frontiers of growth and achievement.
                           </p>
                         </div>
-                        <div className="w-2/12 xsm:w-auto sm:w-auto pt-12 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
+                        <div className="w-2/12 xsm:w-auto sm:w-auto pt-20 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
                           <div className="">
                             <Image
                               src={Vision}
@@ -98,7 +119,7 @@ function Aboutus() {
                           </div>
                         </div>
                       </div>
-                      <div className="absolute top-0 xsm:top-28 sm:top-28 right-0 xsm:mt-5 sm:mt-5">
+                      <div className="absolute bottom-0  right-0 xsm:mt-5 sm:mt-5">
                         <Image
                           src={Bigimg}
                           alt="big image png"
@@ -110,7 +131,7 @@ function Aboutus() {
                 </div>
                 <div className="grid grid-cols-3 xsm:grid-cols-2 sm:grid-cols-2 gap-6">
                   <div>
-                    <div className="bg-ngl_white rounded-xl relative">
+                    <div className="bg-ngl_white rounded-xl relative h-full">
                       <div className="flex justify-between xsm:flex-col sm:flex-col">
                         <div className="w-full p-5">
                           <p className="text-ngl_black text-2xl font-semibold">
@@ -121,7 +142,7 @@ function Aboutus() {
                           </p>
                         </div>
                       </div>
-                      <div className="absolute top-1 xsm:top-0 sm:top-0 right-0 ">
+                      <div className="absolute bottom-0 right-0 ">
                         <Image
                           src={Smallimg}
                           alt="big image png"
@@ -131,7 +152,7 @@ function Aboutus() {
                     </div>
                   </div>
                   <div>
-                    <div className="bg-ngl_white rounded-xl relative">
+                    <div className="bg-ngl_white rounded-xl relative h-full">
                       <div className="flex justify-between xsm:flex-col sm:flex-col">
                         <div className="w-full p-5">
                           <p className="text-ngl_black text-2xl font-semibold">
@@ -142,7 +163,7 @@ function Aboutus() {
                           </p>
                         </div>
                       </div>
-                      <div className="absolute top-1 xsm:top-0 sm:top-0 right-0 ">
+                      <div className="absolute bottom-0 right-0 ">
                         <Image
                           src={Smallimg}
                           alt="big image png"
@@ -152,7 +173,7 @@ function Aboutus() {
                     </div>
                   </div>
                   <div className=" xsm:col-span-2 sm:col-span-2">
-                    <div className="bg-ngl_white rounded-xl relative">
+                    <div className="bg-ngl_white rounded-xl relative h-full">
                       <div className="flex justify-between xsm:flex-col sm:flex-col">
                         <div className="w-full p-5">
                           <p className="text-ngl_black text-2xl font-semibold">
@@ -163,7 +184,7 @@ function Aboutus() {
                           </p>
                         </div>
                       </div>
-                      <div className="absolute top-1 xsm:top-0 sm:top-0 right-0 ">
+                      <div className="absolute bottom-0 right-0 ">
                         <Image
                           src={Smallimg}
                           alt="big image png"

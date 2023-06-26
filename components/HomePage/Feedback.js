@@ -11,40 +11,16 @@ const FeedbackList = [
     image: feedImg,
     sigimage: Signature,
     comment:
-      "Lorem ipsum dolor sit amet consectetur. Sit diam id lectus eget morbi ac. Eget aliquam felis lectus risus ut quisque. Amet sed risus orci aliquam viverra convallis  malesuada euismod pulvinar. Habitant enim integer  posuere ut et gravida nulla. Tempus adipiscing maecenas tortor nec donec. Sodales tortor rhoncus odio eget leo  maecenas sed porta. Id viverra in nisi suspendisse sed diam turpis placerat eros. Tellus rhoncus sed cras egestas ridiculus.",
-    name: "Sabid Hasan - Senior UX UI Designer",
+      "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
+    name: "MOHAMMED ALAMGIR KABIR - Chairman, Neocon Group",
   },
   {
     id: 2,
     image: feedImg,
     sigimage: Signature,
     comment:
-      "Lorem ipsum dolor sit amet consectetur. Sit diam id lectus eget morbi ac. Eget aliquam felis lectus risus ut quisque. Amet sed risus orci aliquam viverra convallis  malesuada euismod pulvinar. Habitant enim integer  posuere ut et gravida nulla. Tempus adipiscing maecenas tortor nec donec. Sodales tortor rhoncus odio eget leo  maecenas sed porta. Id viverra in nisi suspendisse sed diam turpis placerat eros. Tellus rhoncus sed cras egestas ridiculus.",
-    name: "Sabid Hasan - Senior UX UI Designer",
-  },
-  {
-    id: 3,
-    image: feedImg,
-    sigimage: Signature,
-    comment:
-      "Lorem ipsum dolor sit amet consectetur. Sit diam id lectus eget morbi ac. Eget aliquam felis lectus risus ut quisque. Amet sed risus orci aliquam viverra convallis  malesuada euismod pulvinar. Habitant enim integer  posuere ut et gravida nulla. Tempus adipiscing maecenas tortor nec donec. Sodales tortor rhoncus odio eget leo  maecenas sed porta. Id viverra in nisi suspendisse sed diam turpis placerat eros. Tellus rhoncus sed cras egestas ridiculus.",
-    name: "Sabid Hasan - Senior UX UI Designer",
-  },
-  {
-    id: 4,
-    image: feedImg,
-    sigimage: Signature,
-    comment:
-      "Lorem ipsum dolor sit amet consectetur. Sit diam id lectus eget morbi ac. Eget aliquam felis lectus risus ut quisque. Amet sed risus orci aliquam viverra convallis  malesuada euismod pulvinar. Habitant enim integer  posuere ut et gravida nulla. Tempus adipiscing maecenas tortor nec donec. Sodales tortor rhoncus odio eget leo  maecenas sed porta. Id viverra in nisi suspendisse sed diam turpis placerat eros. Tellus rhoncus sed cras egestas ridiculus.",
-    name: "Sabid Hasan - Senior UX UI Designer",
-  },
-  {
-    id: 5,
-    image: feedImg,
-    sigimage: Signature,
-    comment:
-      "Lorem ipsum dolor sit amet consectetur. Sit diam id lectus eget morbi ac. Eget aliquam felis lectus risus ut quisque. Amet sed risus orci aliquam viverra convallis  malesuada euismod pulvinar. Habitant enim integer  posuere ut et gravida nulla. Tempus adipiscing maecenas tortor nec donec. Sodales tortor rhoncus odio eget leo  maecenas sed porta. Id viverra in nisi suspendisse sed diam turpis placerat eros. Tellus rhoncus sed cras egestas ridiculus.",
-    name: "Sabid Hasan - Senior UX UI Designer",
+      "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
+    name: "MOHAMMED ALAMGIR KABIR - Chairman, Neocon Group",
   },
 ];
 
