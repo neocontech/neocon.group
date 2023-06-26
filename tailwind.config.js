@@ -14,6 +14,7 @@ module.exports = {
     colors: {
       ngl_black: "#262626",
       ngl_gray: "#707070",
+      ngl_gray_2: "#D0D5DD",
       ngl_white: "#Ffffff",
       ngl_white_1: "#FAFAFA",
       ngl_white_2: "#FFF8F6",
