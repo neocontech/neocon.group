@@ -17,11 +17,11 @@ function Concerns() {
       <div className="px-10 xsm:px-5 sm:px-5">
         <div className="pb-20">
           <div className="flex flex-row">
-            <BiSquareRounded
-              size={40}
-              className="text-ngl_orange mt-5 xsm:hidden sm:hidden"
-            />
-            <div>
+            <div className="w-5 block xsm:hidden sm:hidden">
+              <BiSquareRounded size={20} className="text-ngl_orange mt-7 " />
+            </div>
+
+            <div className="w-full">
               <div className="px-5">
                 <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
                   Our Concerns

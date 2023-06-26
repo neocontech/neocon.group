@@ -29,6 +29,7 @@ module.exports = {
       "2xl": "24px",
       "3xl": "36px",
       "32xl": "32px",
+      "40xl": "40px",
     },
 
     screens: {
