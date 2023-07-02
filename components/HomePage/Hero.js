@@ -101,9 +101,9 @@ function Hero() {
               <div className="relative">
                 <div className="w-4/5 2xl:w-8/12 xsm:w-auto sm:w-auto">
                   <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
-                    
-                    We are a team that Empowering connectivity for a digital
-                    world in one{" "}
+                    We are a team that Empowering connectivity{" "}
+                    <br className="block xsm:hidden sm:hidden" />
+                    for a digital world in one{" "}
                     <span className="text-ngl_orange">convenient place</span>
                   </p>
                 </div>
