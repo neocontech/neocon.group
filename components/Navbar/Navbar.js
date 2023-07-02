@@ -40,7 +40,7 @@ function Navbar() {
                   )}
                 </div>
                 <div className="xsm:hidden sm:hidden flex flex-row xsm:flex-col sm:flex-col my-auto">
-                  <Link href="/comapny" className="flex flex-row mx-5">
+                  <Link href="/company" className="flex flex-row mx-5">
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Company</p>
                   </Link>
@@ -61,7 +61,7 @@ function Navbar() {
             </div>
             {isMobileMenuOpen && (
               <div className="md:hidden">
-                <Link href="/comapny" className="block my-3 mx-5">
+                <Link href="/company" className="block my-3 mx-5">
                   <p className="font-medium">Company</p>
                 </Link>
                 <Link href="/business" className="block my-3 mx-5">
