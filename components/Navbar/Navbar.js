@@ -52,7 +52,7 @@ function Navbar() {
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">News Room</p>
                   </Link>
-                  <Link href="/contact" className="flex flex-row mx-5">
+                  <Link href="/contact-us" className="flex flex-row mx-5">
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Contact Us</p>
                   </Link>
@@ -70,7 +70,7 @@ function Navbar() {
                 <Link href="/news" className="block my-3 mx-5">
                   <p className="font-medium">News Room</p>
                 </Link>
-                <Link href="/contact" className="block my-3 mx-5">
+                <Link href="/contact-us" className="block my-3 mx-5">
                   <p className="font-medium">Contact Us</p>
                 </Link>
               </div>
