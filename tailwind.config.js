@@ -32,6 +32,7 @@ module.exports = {
       "3xl": "36px",
       "32xl": "32px",
       "40xl": "40px",
+      "41xl": "41px",
       "48xl": "48px",
     },
 

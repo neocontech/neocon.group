@@ -4,6 +4,7 @@ import {
   BsFillArrowDownRightCircleFill,
 } from "react-icons/bs";
 import AboutUs from "./AboutUs";
+import Director from "./Director";
 
 function Tabs() {
   const [openTab, setOpenTab] = useState(1);
@@ -81,7 +82,7 @@ function Tabs() {
                   <AboutUs />
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  Director
+                  <Director />
                 </div>
               </div>
             </div>
