@@ -99,11 +99,11 @@ function Hero() {
           <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20 xsm:pt-0 sm:pt-0">
             <div className="col-span-2 xsm:col-span-1 sm:col-span-1 ">
               <div className="relative">
-                <div className="w-4/5 xsm:w-auto sm:w-auto">
+                <div className="w-4/5 2xl:w-8/12 xsm:w-auto sm:w-auto">
                   <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
-                    
-                    We are a team that Empowering connectivity for a digital
-                    world in one{" "}
+                    We are a team that Empowering connectivity{" "}
+                    <br className="block xsm:hidden sm:hidden" />
+                    for a digital world in one{" "}
                     <span className="text-ngl_orange">convenient place</span>
                   </p>
                 </div>

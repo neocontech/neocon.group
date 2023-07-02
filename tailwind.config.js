@@ -40,7 +40,8 @@ module.exports = {
       xsm: { min: "280px", max: "639px" },
       // => @media (min-width: 280px) { ... }
       sm: { min: "640px", max: "767px" },
-      // => @media (min-width: 640px and max-width: 767px) { ... }
+      // => @media (min-width: 1677px) { ... }
+      "2xl": { min: "1677px" },
     },
   },
   plugins: [
