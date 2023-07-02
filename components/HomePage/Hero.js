@@ -101,14 +101,7 @@ function Hero() {
               <div className="relative">
                 <div className="w-4/5 xsm:w-auto sm:w-auto">
                   <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
-                    {/* We are a team <br className="hidden xsm:block sm:block" />{" "}
-                    that <br className="block xsm:hidden sm:hidden" />
-                    put all of your options{" "}
-                    <br className="block xsm:hidden sm:hidden" />
-                    in one{" "}
-                    <span className="text-ngl_orange">
-                      convenient location.
-                    </span> */}
+                    
                     We are a team that Empowering connectivity for a digital
                     world in one{" "}
                     <span className="text-ngl_orange">convenient place</span>

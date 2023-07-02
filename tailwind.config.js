@@ -15,6 +15,7 @@ module.exports = {
       ngl_black: "#262626",
       ngl_gray: "#707070",
       ngl_gray_2: "#D0D5DD",
+      ngl_gray_3: "#757E95",
       ngl_white: "#Ffffff",
       ngl_white_1: "#FAFAFA",
       ngl_white_2: "#FFF8F6",
@@ -31,6 +32,7 @@ module.exports = {
       "3xl": "36px",
       "32xl": "32px",
       "40xl": "40px",
+      "48xl": "48px",
     },
 
     screens: {
@@ -40,5 +42,8 @@ module.exports = {
       // => @media (min-width: 640px and max-width: 767px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    // ...
+  ],
 };
