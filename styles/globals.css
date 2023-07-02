@@ -150,22 +150,26 @@ a {
 }
 /* homepage */
 .landing_bg {
-  background-image: url(../public/assets/homepage/landing-main-asset.png);
+  background-image: url(../public/assets/homepage/landing-main-asset-min.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  /* background-position: right bottom; */
 }
-/* .hero_asset {
-  background-image: url(../public/assets/homepage/hero_asset.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-} */
+@media only screen and (max-width: 768px) {
+  .landing_bg {
+    background-image: url(../public/assets/homepage/landing-main-asset-minresponsive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .slider_img_w {
   width: 38.7px;
   height: 132.01px;
@@ -190,7 +194,7 @@ a {
     width: 40px;
     margin-left: -26px;
     margin-right: -26px;
-  
+
     /* color: white;
     fill: white; */
   }
@@ -202,15 +206,4 @@ a {
   .custom-splide .splide__pagination {
     bottom: -2em;
   }
-}
-
-.mission_vission_b{
-  background-image: url(../public/assets/aboutus/big.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.mission_vission_s{
-  background-image: url(../public/assets/aboutus/small.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }

@@ -27,10 +27,11 @@ function Concerns() {
                   Our Concerns
                 </p>
                 <p className="font-regular text-ngl_black text-base">
-                  Neocon Group is a national business entity with diversified
-                  interests-in Fintech, Software Development, Mobility
-                  Development, Network Solution, Data Solution, Internet
-                  Solution and Cloud Solution.
+                  At Neocon Group, we believe in the power of synergy and
+                  collaboration. By forging strategic partnerships and nurturing
+                  a vibrant ecosystem, we create an environment that encourages
+                  knowledge exchange, fosters creativity, and drives collective
+                  progress.
                 </p>
               </div>
 

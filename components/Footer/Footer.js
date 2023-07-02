@@ -25,22 +25,22 @@ function Footer() {
               <Image
                 src={footerlogo}
                 alt="footer logo png"
-                className="w-44  h-auto"
+                className="w-44 xsm:w-32 sm:w-32  h-auto"
               />
             </Link>
           </div>
           <div className="my-auto flex flex-row text-ngl_white">
             <Link href="/" className="mx-2">
-              <FaInstagram className="w-6 h-auto" />
+              <FaInstagram className="w-6 xsm:w-4 sm:w-4 h-auto" />
             </Link>
             <Link href="/" className="mx-2">
-              <FaLinkedin className="w-6 h-auto" />
+              <FaLinkedin className="w-6 xsm:w-4 sm:w-4 h-auto" />
             </Link>
             <Link href="/" className="mx-2">
-              <FaFacebookSquare className="w-6 h-auto" />
+              <FaFacebookSquare className="w-6 xsm:w-4 sm:w-4 h-auto" />
             </Link>
             <Link href="/" className="mx-2">
-              <FaTwitter className="w-6 h-auto" />
+              <FaTwitter className="w-6 xsm:w-4 sm:w-4 h-auto" />
             </Link>
             {/*  */}
           </div>
@@ -72,12 +72,12 @@ function Footer() {
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
                   <Image
-                    src={ino}
+                    src={get}
                     alt="company logo png"
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
                   <Image
-                    src={ino}
+                    src={tech}
                     alt="company logo png"
                     className="w-auto xsm:w-40 sm:w-40 h-auto"
                   />
@@ -90,20 +90,20 @@ function Footer() {
                   Address
                 </p>
                 <div className="flex flex-col text-base font-regular text-ngl_white">
-                  <div className="flex flex-row pb-1">
+                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
                     <div className="my-auto w-5">
                       <FaPhoneVolume />
                     </div>
 
                     <p>+880 9638 232323</p>
                   </div>
-                  <div className="flex flex-row pb-1">
+                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
                     <div className="my-auto w-5">
                       <IoMdMail />
                     </div>
                     <p>hello@neocon.tech</p>
                   </div>
-                  <div className="flex flex-row pb-1">
+                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
                     <div className="mt-1 w-5">
                       <ImLocation />
                     </div>
