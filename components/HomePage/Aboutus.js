@@ -22,7 +22,7 @@ function Aboutus() {
                 <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
                   About Us
                 </p>
-                <div className="font-regular text-ngl_black text-base">
+                <div className="font-regular text-ngl_gray text-base">
                   <p>
                     Neocon Group is a prominent and diversified business
                     conglomerate comprising numerous sister concerns. With a
