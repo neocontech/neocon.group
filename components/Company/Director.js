@@ -86,7 +86,7 @@ function Director() {
                           : "justify-end xsm:pb-5 sm:pb-5"
                       }`}
                     >
-                      <div>
+                      <div className="px-5">
                         <p className="text-sm text-ngl_orange font-semibold">
                           {director.subheader}
                         </p>
