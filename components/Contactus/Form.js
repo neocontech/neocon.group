@@ -35,8 +35,11 @@ function Form() {
           />
         </div>
         <div className="flex flex-col relative mb-6">
-          <label for="mobile" className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5">
-          Phone
+          <label
+            for="mobile"
+            className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
+          >
+            Phone
           </label>
           <input
             id="mobile"
@@ -47,7 +50,6 @@ function Form() {
             placeholder="Enter your mobile number"
             required
           />
-          
         </div>
 
         <div className="flex flex-col relative mb-6">
@@ -65,9 +67,10 @@ function Form() {
             <option value="" disabled selected>
               Select your inquiry
             </option>
-            <option value="inquiry1">Inquiry 1</option>
-            <option value="inquiry2">Inquiry 2</option>
-            <option value="inquiry3">Inquiry 3</option>
+            <option value="ksl">Kabir Securities Limited</option>
+            <option value="ntl">Neocon Technologies Limited</option>
+            <option value="nil">Neocon Innovations Limited</option>
+            <option value="ngl">Neocon Gateway Limited</option>
           </select>
         </div>
 
@@ -92,7 +95,16 @@ function Form() {
           </button>
         </div>
         <div>
-          <p className="text-sm text-ngl_gray_3 font-regular ">Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus condimentum non viverra consequat sit. Diam sed nec egestas ut morbi rhoncus sed nec egestas ut morbi <strong className="underline text-ngl_black"> Privacy Policy</strong>.</p>
+          <p className="text-sm text-ngl_gray_3 font-regular ">
+            Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus
+            condimentum non viverra consequat sit. Diam sed nec egestas ut morbi
+            rhoncus sed nec egestas ut morbi{" "}
+            <strong className="underline text-ngl_black">
+              {" "}
+              Privacy Policy
+            </strong>
+            .
+          </p>
         </div>
       </form>
     </>

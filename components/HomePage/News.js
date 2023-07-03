@@ -59,11 +59,11 @@ function News() {
       const screenWidth = window.innerWidth;
       if (screenWidth < 768) {
         setShowArrows(true);
-        
+
         setPerPage(1);
       } else {
         setShowArrows(true);
-       
+
         setPerPage(3);
       }
     };
@@ -85,7 +85,7 @@ function News() {
     interval: 4000,
     arrows: false,
     pagination: false,
-   
+
     start: currentSlide,
   };
   return (
@@ -109,12 +109,15 @@ function News() {
                   {NewsList.map((news, index) => (
                     <SplideSlide key={index}>
                       <div className="bg-ngl_white rounded-3xl w-[391px] xsm:w-auto sm:w-auto xsm:mx-5 sm:mx-5 h-auto">
-                        <div>
+                        <div className="relative">
                           <Image
                             src={news.image}
                             alt="news img png"
                             className="w-[391px] h-[191px]"
                           />
+                          <p className="w-1/2 leading-tight absolute bottom-0 text-ngl_white text-2xl font-bold p-6 rounded-bl-3xl bg-gradient-to-r from-ngl_black to-ngl_white/5">
+                            {news.name}
+                          </p>
                         </div>
                         <div className="flex flex-col p-5">
                           <p className="text-ngl_black text-2xl leading-tight font-semibold pb-3">

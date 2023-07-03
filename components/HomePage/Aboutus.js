@@ -22,14 +22,16 @@ function Aboutus() {
                 <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
                   About Us
                 </p>
-                <div className="font-regular text-ngl_black text-base">
+                <div className="font-regular text-ngl_gray text-base">
                   <p>
-                    At Neocon Group, we are at the forefront of driving
-                    innovation and transforming the digital landscape. As a
-                    leading conglomerate, we bring together a diverse range of
-                    expertise in stock market securities, internet services, and
-                    Software Company to create a seamless ecosystem that shapes
-                    the future.
+                    Neocon Group is a prominent and diversified business
+                    conglomerate comprising numerous sister concerns. With a
+                    rich history and a strong presence in various sectors,
+                    Neocon Group has emerged as a leader in the business
+                    landscape.We bring together a diverse range of expertise in
+                    stock market securities, internet services, and Software
+                    Company to create a seamless ecosystem that shapes the
+                    future.
                   </p>
                   <p className="py-2">
                     Neocon Group is dedicated to delivering exceptional services
@@ -60,13 +62,7 @@ function Aboutus() {
                             Mission
                           </p>
                           <p className="text-ngl_gray font-regular text-base">
-                            At Neocon Group, our mission is to revolutionize the
-                            digital landscape by empowering individuals,
-                            businesses, and industries with innovative
-                            solutions. We strive to bridge the gap between
-                            technology and practical application, accelerating
-                            progress and transforming the way people live, work,
-                            and connect.
+                          Neocon Group's mission is to excel as a diversified business conglomerate, encompassing various sectors such as stock market, software development, internet services, data centers, and more. Our primary objective is to deliver outstanding products and services while upholding the highest standards of quality, innovation, and customer satisfaction. Through our dynamic and forward-thinking approach, we aim to create sustainable value for our customers, employees, and stakeholders, thereby contributing to the growth and development of the communities we serve. We are driven by integrity, ethical business practices, and a strong commitment to social responsibility, striving to make a positive impact on society as a whole.
                           </p>
                         </div>
                         <div className="w-2/12 xsm:w-auto sm:w-auto pt-20 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
@@ -96,17 +92,7 @@ function Aboutus() {
                             Vision
                           </p>
                           <p className="text-ngl_gray font-regular text-base">
-                            Our vision at Neocon Group is to be a catalyst for
-                            change, driving the digital future with visionary
-                            leadership and cutting-edge technologies. We
-                            envision a world where seamless connectivity and
-                            advanced solutions enable limitless possibilities,
-                            empowering individuals and organizations to thrive
-                            in the digital era. Through our relentless pursuit
-                            of innovation, collaboration, and excellence, we
-                            aspire to shape a future where technology enhances
-                            every aspect of human life and propels society
-                            towards new frontiers of growth and achievement.
+                          The vision of Neocon Group is to establish itself as a trusted and influential conglomerate, known for its diverse business ventures and exceptional performance in various industries. We envision Neocon Group as a driving force in the global market, continuously expanding our presence, diversifying our operations, and embracing cutting-edge technologies and trends. With a customer-centric mindset, we aim to exceed expectations, forge long-lasting relationships, and become the preferred choice for our customers and partners. By nurturing talent, fostering a culture of innovation, and adopting sustainable practices, we seek to achieve long-term growth and create a significant positive impact on the ever-evolving business landscape.
                           </p>
                         </div>
                         <div className="w-2/12 xsm:w-auto sm:w-auto pt-20 xsm:pt-0 xsm:pl-5 xsm:pb-1 sm:pl-5 sm:pb-1">
@@ -207,7 +193,6 @@ function Aboutus() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </>

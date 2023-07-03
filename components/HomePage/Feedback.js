@@ -12,7 +12,8 @@ const FeedbackList = [
     sigimage: Signature,
     comment:
       "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
-    name: "MOHAMMED ALAMGIR KABIR - Chairman, Neocon Group",
+    name: "MOHAMMED ALAMGIR KABIR ",
+    designation:"Chairman, Neocon Group"
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const FeedbackList = [
     sigimage: Signature,
     comment:
       "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
-    name: "MOHAMMED ALAMGIR KABIR - Chairman, Neocon Group",
+    name: "MOHAMMED ALAMGIR KABIR ",
+    designation:"Chairman, Neocon Group"
   },
 ];
 
@@ -68,13 +70,16 @@ function Feedback() {
                         <FaQuoteRight size={30} className="text-ngl_orange" />
                       </div>
 
-                      <Image
+                      {/* <Image
                         src={feed.sigimage}
                         alt="signature png"
                         className="w-40 h-auto mx-auto"
-                      />
+                      /> */}
                       <p className="text-lg font-semibold text-ngl_black text-center">
                         {feed.name}
+                      </p>
+                      <p className="text-base font-semibold text-ngl_black text-center">
+                        {feed.designation}
                       </p>
                     </div>
                   </div>

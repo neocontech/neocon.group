@@ -11,10 +11,11 @@ function Hero() {
         <div>
           <p className="text-48xl text-ngl_black font-semibold">Our Business</p>
           <p className="text-base font-regular text-ngl_gray_3 py-5 border-b border-ngl_gray_3">
-            Lorem ipsum dolor sit amet consectetur. Morbi ultrices eget ipsum
-            consectetur consectetur at gravida. Velit ut quam netus facilisis
-            auctor nulla nulla. Elementum leo libero consequat eget aenean.
-            Egestas id elit vestibulum feugiat aenean amet.
+            At Neocon Group, we believe in the power of synergy and
+            collaboration. By forging strategic partnerships and nurturing a
+            vibrant ecosystem, we create an environment that encourages
+            knowledge exchange, fosters creativity, and drives collective
+            progress.
           </p>
         </div>
       </div>
