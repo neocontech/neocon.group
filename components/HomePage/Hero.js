@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import { FaStarOfLife } from "react-icons/fa";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import Numberimg from "../../public/assets/homepage/125.png";
 import SliderLogo from "../../public/assets/homepage/90deglogo.png";

@@ -1,5 +1,4 @@
 import React from "react";
-
 function Hero() {
   return (
     <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">

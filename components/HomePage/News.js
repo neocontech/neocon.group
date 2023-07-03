@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiSquareRounded } from "react-icons/bi";
@@ -53,7 +52,6 @@ const NewsList = [
 function News() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showArrows, setShowArrows] = useState(true);
-  // const [showPagination, setShowPagination] = useState(false);
   const [perPage, setPerPage] = useState(4);
 
   useEffect(() => {
@@ -61,11 +59,11 @@ function News() {
       const screenWidth = window.innerWidth;
       if (screenWidth < 768) {
         setShowArrows(true);
-        // setShowPagination(true);
+        
         setPerPage(1);
       } else {
         setShowArrows(true);
-        // setShowPagination(false);
+       
         setPerPage(3);
       }
     };
@@ -87,7 +85,7 @@ function News() {
     interval: 4000,
     arrows: false,
     pagination: false,
-    // pagination: showPagination,
+   
     start: currentSlide,
   };
   return (

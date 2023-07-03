@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Contact from "../HomePage/Contact";
 import Alamgir from "../../public/assets/director/Alamgir-Kabir.png";
 import Rowshan from "../../public/assets/director/Rowshan-Ara.png";
 import Shadman from "../../public/assets/director/Shadman-Kabir.png";
@@ -122,7 +121,7 @@ function Director() {
             </div>
           </div>
         </div>
-        {/* <Contact/> */}
+        
       </div>
     </>
   );

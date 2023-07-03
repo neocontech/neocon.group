@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Contact from "../HomePage/Contact";
 import Concern1 from "../../public/assets/concerns/Rectangle1.png";
 import Concern2 from "../../public/assets/concerns/Rectangle2.png";
 import Concern3 from "../../public/assets/concerns/Rectangle3.png";
@@ -30,7 +29,7 @@ function Business() {
             ))}
           </div>
         </div>
-        {/* <Contact /> */}
+        
       </div>
     </>
   );
