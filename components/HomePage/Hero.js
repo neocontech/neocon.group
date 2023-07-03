@@ -117,11 +117,7 @@ function Hero() {
             </div>
             <div className="flex flex-col text-ngl_black xsm:hidden sm:hidden">
               <div>
-                {/* <Image
-                  src={Numberimg}
-                  alt="numver img"
-                  className="w-40 xsm:w-20 sm:w-20 h-auto"
-                /> */}
+               
                 <p className="text-ngl_orange text-text_56">50</p>
               </div>
               <p className="text-ngl_gray py-5">
@@ -178,7 +174,7 @@ function Hero() {
               <div className="pt-20">
                 <Splide
                   options={splideOptions}
-                  className="px-10 xsm:px-0 sm:px-0 custom-splide "
+                  className="px-10 xsm:px-0 sm:px-0  custom-splide "
                 >
                   {SlideList.map((slide, index) => (
                     <SplideSlide key={index}>

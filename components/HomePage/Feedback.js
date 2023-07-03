@@ -41,7 +41,7 @@ function Feedback() {
     <>
       <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="pb-20">
-          <div className="bg-ngl_white rounded-xl p-6 xsm:p-2 sm:p-2">
+          <div className="bg-ngl_white rounded-xl p-6 xsm:py-5 sm:py-5 xsm:px-2 sm:px-2">
             <Splide options={splideOptions}>
               {FeedbackList.map((feed, index) => (
                 <SplideSlide key={index}>

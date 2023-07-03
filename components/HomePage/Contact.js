@@ -20,7 +20,7 @@ function Contact() {
               </div>
 
               <div className="bg-ngl_white rounded-xl p-6 flex justify-between xsm:flex-col sm:flex-col w-full">
-                <p className="text-40xl font-semibold text-ngl_black xsm:leading-tight sm:leading-tight xsm:pb-3 sm:pb-3">
+                <p className="text-40xl xsm:text-3xl sm:text-3xl xsm:text-center sm:text-center font-semibold text-ngl_black xsm:leading-tight sm:leading-tight xsm:pb-3 sm:pb-3">
                   Let’s Build Your
                   <span className="text-ngl_orange "> Future</span> with us.
                 </p>
