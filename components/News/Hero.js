@@ -12,10 +12,11 @@ function Hero() {
         <div>
           <p className="text-48xl text-ngl_black font-semibold">News Room</p>
           <p className="text-base font-regular text-ngl_gray_3 py-5 border-b border-ngl_gray_3">
-            Lorem ipsum dolor sit amet consectetur. Morbi ultrices eget ipsum
-            consectetur consectetur at gravida. Velit ut quam netus facilisis
-            auctor nulla nulla. Elementum leo libero consequat eget aenean.
-            Egestas id elit vestibulum feugiat aenean amet.
+            Stay up-to-date with the latest happenings, industry insights, and
+            exciting developments within our organization. Explore our news
+            articles, press releases, and media resources to get a firsthand
+            look at our innovative solutions, successful projects, and thought
+            leadership.
           </p>
         </div>
       </div>

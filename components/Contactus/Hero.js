@@ -12,10 +12,10 @@ function Hero() {
         <div>
           <p className="text-48xl text-ngl_black font-semibold">Contact us</p>
           <p className="text-base font-regular text-ngl_gray_3 py-5 border-b border-ngl_gray_3">
-            Lorem ipsum dolor sit amet consectetur. Morbi ultrices eget ipsum
-            consectetur consectetur at gravida. Velit ut quam netus facilisis
-            auctor nulla nulla. Elementum leo libero consequat eget aenean.
-            Egestas id elit vestibulum feugiat aenean amet.
+            We value your inquiries, feedback, and partnership opportunities.
+            Whether you have a question, want to explore potential
+            collaborations, or simply wish to learn more about our innovative
+            solutions, our dedicated team is here to assist you.
           </p>
         </div>
       </div>

@@ -38,26 +38,29 @@ function AboutUs() {
               </video>
             </div>
             <div className="col-span-2 xsm:col-span-1 sm:col-span-1">
-              <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
-                We believe that we can handle every
-                <span className="text-ngl_orange"> Tech Solution</span>.
+              <p className="text-text_51 leading-tight text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
+              We believe that Neocon Group can handle any Tech solution for 
+                <span className="text-ngl_orange"> your Business</span>.
               </p>
               <p className="text-base font-regular text-ngl_gray_3">
-                Neocon Group Limited is a leading software company in Bangladesh
-                that offers a range of innovative and advanced software
-                solutions to meet the evolving needs of businesses of all sizes.
-                We specialize in cutting-edge technology, software development,
-                web application development, mobile application development, and
-                IoT, Fintech solution.
+                At Neocon Group, we are catalysts for transformative change,
+                driving innovation, and shaping the future. Our relentless
+                pursuit of excellence has positioned us as leaders in the
+                industry, propelling us towards our mission of revolutionizing
+                the way the world operates.
               </p>
             </div>
           </div>
 
           <div className="w-full">
             <div>
-              <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
-                Neocon Group is one of the best in{" "}
-                <span className="text-ngl_orange"> Bangladesh</span>.
+              <p className="text-text_51 leading-tight text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
+                Welcome to Neocon Group -
+                <span className="text-ngl_orange">
+                  {" "}
+                  Where Innovation Meets Impact
+                </span>
+                .
               </p>
               <div className="text-base font-regular text-ngl_gray_3">
                 <p>
@@ -242,7 +245,6 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );
