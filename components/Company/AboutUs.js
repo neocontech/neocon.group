@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { BiSquareRounded } from "react-icons/bi";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Mission from "../../public/assets/aboutus/mission.png";
 import Vision from "../../public/assets/aboutus/vision.png";
 import Bigimg from "../../public/assets/aboutus/big.png";
 import Smallimg from "../../public/assets/aboutus/small.png";
-import Contact from "../HomePage/Contact";
 
 function AboutUs() {
   const videoPath = "/website-promo.mp4";
@@ -243,8 +241,8 @@ function AboutUs() {
               </button>
             </div>
           </div>
-          <Contact />
         </div>
+        
       </div>
     </>
   );

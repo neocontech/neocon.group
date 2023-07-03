@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <>
       <div className="sticky z-50 top-0 left-0 right-0 w-full">
-        <div className="px-10 bg-ngl_white/60 backdrop-blur-sm backdrop-filter">
+        <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5 bg-ngl_white/60 backdrop-blur-sm backdrop-filter">
           <div className="py-5">
             <div className="flex justify-between">
               <Link href="/" className="cursor-pointer">
@@ -52,7 +52,7 @@ function Navbar() {
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">News Room</p>
                   </Link>
-                  <Link href="/contact" className="flex flex-row mx-5">
+                  <Link href="/contact-us" className="flex flex-row mx-5">
                     <FiCircle size={10} className="my-auto text-xs text-ngl_orange" />
                     <p className="pl-2 font-medium">Contact Us</p>
                   </Link>
@@ -70,7 +70,7 @@ function Navbar() {
                 <Link href="/news" className="block my-3 mx-5">
                   <p className="font-medium">News Room</p>
                 </Link>
-                <Link href="/contact" className="block my-3 mx-5">
+                <Link href="/contact-us" className="block my-3 mx-5">
                   <p className="font-medium">Contact Us</p>
                 </Link>
               </div>

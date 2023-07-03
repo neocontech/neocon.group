@@ -6,11 +6,11 @@ function Hero() {
       <div className="py-20">
         <div className="font-regular text-base pb-10">
           <h2 className="text-ngl_black">
-            Home /<span className="text-ngl_orange"> Company</span>
+            Home /<span className="text-ngl_orange"> Contact us</span>
           </h2>
         </div>
         <div>
-          <p className="text-48xl text-ngl_black font-semibold">Company</p>
+          <p className="text-48xl text-ngl_black font-semibold">Contact us</p>
           <p className="text-base font-regular text-ngl_gray_3 py-5 border-b border-ngl_gray_3">
             Lorem ipsum dolor sit amet consectetur. Morbi ultrices eget ipsum
             consectetur consectetur at gravida. Velit ut quam netus facilisis
