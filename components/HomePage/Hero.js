@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
-import Numberimg from "../../public/assets/homepage/125.png";
 import SliderLogo from "../../public/assets/homepage/90deglogo.png";
+import SliderLogo2 from "../../public/assets/homepage/b90deglogo.png";
 import Heroasset from "../../public/assets/homepage/hero_asset.png";
 const SlideList = [
   {
@@ -16,7 +16,7 @@ const SlideList = [
   },
   {
     id: 2,
-    image: SliderLogo,
+    image: SliderLogo2,
 
     header: "We Create the Fintech of the Future",
     date: "20.05.2013",
@@ -30,7 +30,7 @@ const SlideList = [
   },
   {
     id: 4,
-    image: SliderLogo,
+    image: SliderLogo2,
 
     header: "Next-Generation Stock Market Brokerage Solutions",
     date: "20.05.2013",
@@ -117,7 +117,6 @@ function Hero() {
             </div>
             <div className="flex flex-col text-ngl_black xsm:hidden sm:hidden">
               <div>
-               
                 <p className="text-ngl_orange text-text_56">50</p>
               </div>
               <p className="text-ngl_gray py-5">
@@ -156,7 +155,7 @@ function Hero() {
                           <p className="text-sm">{slide.date}</p>
                         </div>
 
-                        <div className="">
+                        <div >
                           <Image
                             src={slide.image}
                             alt="slider img"
@@ -174,12 +173,12 @@ function Hero() {
               <div className="pt-20">
                 <Splide
                   options={splideOptions}
-                  className="px-10 xsm:px-0 sm:px-0  custom-splide "
+                  className="px-10 xsm:px-0 sm:px-0  custom-splide h-"
                 >
                   {SlideList.map((slide, index) => (
-                    <SplideSlide key={index}>
+                    <SplideSlide key={index} cla>
                       <div
-                        className={`flex justify-between p-6 mx-2 rounded-xl ${
+                        className={`flex justify-between p-6 mx-2 rounded-xl h-full ${
                           index % 2 === 0 ? "bg-ngl_orange" : "bg-ngl_black"
                         } ${
                           index % 2 === 0 ? "text-ngl_black" : "text-ngl_white"
@@ -190,11 +189,11 @@ function Hero() {
                           <p className="text-sm">{slide.date}</p>
                         </div>
 
-                        <div className="">
+                        <div className="w-2/5">
                           <Image
                             src={slide.image}
                             alt="slider img"
-                            className="mx-auto slider_img_w xsm:w-auto xsm:h-auto"
+                            className="mx-auto  xsm:w-10 xsm:h-full"
                           />
                         </div>
                       </div>
@@ -205,11 +204,7 @@ function Hero() {
             </div>
             <div className="flex flex-col text-ngl_black hidden xsm:block sm:block">
               <div>
-                <Image
-                  src={Numberimg}
-                  alt="numver img"
-                  className="w-40 xsm:w-20 sm:w-20 h-auto"
-                />
+                <p className="text-ngl_orange text-text_56">50</p>
               </div>
               <p className="text-ngl_gray py-5">
                 Already 125 companies around the world have approached us to
