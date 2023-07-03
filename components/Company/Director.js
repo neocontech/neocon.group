@@ -79,21 +79,23 @@ function Director() {
                       : "flex-row-reverse xsm:flex-col sm:flex-col"
                   }`}
                 >
-                  <div className="my-auto ">
+                  <div className="my-auto w-3/5 xsm:w-full sm:w-full">
                     <div
                       className={` flex ${
-                        director.id % 2 === 0 ? " justify-start xsm:pb-5 sm:pb-5" : "justify-end xsm:pb-5 sm:pb-5"
+                        director.id % 2 === 0
+                          ? " justify-start xsm:pb-5 sm:pb-5"
+                          : "justify-end xsm:pb-5 sm:pb-5"
                       }`}
                     >
-                      <div className="w-4/5 xsm:w-full sm:w-full ">
+                      <div>
                         <p className="text-sm text-ngl_orange font-semibold">
                           {director.subheader}
                         </p>
-                        <p className="text-32xl xsm:text-xl sm:xl text-ngl_black font-semibold">
+                        <p className="text-32xl xsm:text-xl sm:text-xl text-ngl_black font-semibold leading-tight">
                           {director.header}
                         </p>
                         <div className="border-l-2 border-ngl_orange">
-                          <p className="text-base font-regular text-ngl_gray_3 p-2">
+                          <p className="text-base font-regular text-ngl_gray_3 p-2 mb-3">
                             {director.comment}
                           </p>
                         </div>
@@ -108,7 +110,7 @@ function Director() {
                       </div>
                     </div>
                   </div>
-                  <div className="my-auto">
+                  <div className="my-auto w-2/5 xsm:w-full sm:w-full">
                     <Image
                       src={director.image}
                       alt="director image"
@@ -119,10 +121,8 @@ function Director() {
               ))}
             </div>
           </div>
-
-          
         </div>
-        <Contact/>
+        {/* <Contact/> */}
       </div>
     </>
   );

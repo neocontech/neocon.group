@@ -94,12 +94,12 @@ function Hero() {
   }, []);
   return (
     <>
-      <div className="px-10 xsm:px-5 sm:px-5">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="py-20">
           <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1  gap-6 pt-20 xsm:pt-0 sm:pt-0">
             <div className="col-span-2 xsm:col-span-1 sm:col-span-1 ">
               <div className="relative">
-                <div className="w-4/5 2xl:w-8/12 xsm:w-auto sm:w-auto">
+                <div className="w-4/5 2xl:w-full xsm:w-auto sm:w-auto">
                   <p className="text-text_56 xsm:text-3xl sm:text-3xl font-semibold leading-tight xsm:leading-snug">
                     We are a team that Empowering connectivity{" "}
                     <br className="block xsm:hidden sm:hidden" />
@@ -107,7 +107,7 @@ function Hero() {
                     <span className="text-ngl_orange">convenient place</span>
                   </p>
                 </div>
-                <div className="absolute top-1 xsm:-top-7 sm:-top-7 left-80 ml-40 xsm:left-0 xsm:ml-40 sm:left-0 sm:ml-40 xsm:hidden sm:hidden block">
+                <div className="z-10 absolute top-1 xsm:-top-7 sm:-top-7 left-80 ml-40 xsm:left-0 xsm:ml-40 sm:left-0 sm:ml-40 xsm:hidden sm:hidden block">
                   <Image
                     src={Heroasset}
                     alt="hero asset .png"
@@ -234,7 +234,7 @@ function Hero() {
             </div>
             <div>
               <video
-                className="w-auto h-auto rounded-3xl"
+                className="w-auto h-auto rounded-3xl 2xl:pt-7"
                 controls
                 autoPlay
                 // play={true}

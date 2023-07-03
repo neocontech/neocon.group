@@ -92,7 +92,7 @@ function News() {
   };
   return (
     <>
-      <div className="px-10 xsm:px-5 sm:px-5">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div>
           <div className="flex flex-row">
             <div className="w-5 block xsm:hidden sm:hidden">

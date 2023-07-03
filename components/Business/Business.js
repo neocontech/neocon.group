@@ -30,7 +30,7 @@ function Business() {
             ))}
           </div>
         </div>
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </>
   );

@@ -91,8 +91,8 @@ function Form() {
             <p>Submit your message</p>
           </button>
         </div>
-        <div className="">
-          <p className="">Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus condimentum non viverra consequat sit. Diam sed nec egestas ut morbi rhoncus sed nec egestas ut morbi <strong className="underline"> Privacy Policy</strong>.</p>
+        <div>
+          <p className="text-sm text-ngl_gray_3 font-regular ">Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus condimentum non viverra consequat sit. Diam sed nec egestas ut morbi rhoncus sed nec egestas ut morbi <strong className="underline text-ngl_black"> Privacy Policy</strong>.</p>
         </div>
       </form>
     </>

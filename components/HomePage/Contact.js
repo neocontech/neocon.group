@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import { BiSquareRounded } from "react-icons/bi";
 import { FaPaperPlane } from "react-icons/fa";
 function Contact() {
   return (
     <>
-      <div className="px-10 xsm:px-5 sm:px-5">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="py-20">
           <div className="flex flex-row">
             <div className="w-5 block xsm:hidden sm:hidden">
@@ -24,12 +25,14 @@ function Contact() {
                   <span className="text-ngl_orange "> Future</span> with us.
                 </p>
                 <div className="my-auto">
-                  <button className="flex flex-row bg-ngl_black py-3 px-10 rounded-xl xsm:mx-auto sm:mx-auto">
-                    <p className="text-base font-regular text-ngl_white">
-                      Contact With Us
-                    </p>
-                    <FaPaperPlane className="my-auto text-ngl_white pl-1" />
-                  </button>
+                  <Link href="/contact-us">
+                    <button className="flex flex-row bg-ngl_black py-3 px-10 rounded-xl xsm:mx-auto sm:mx-auto">
+                      <p className="text-base font-regular text-ngl_white">
+                        Contact With Us
+                      </p>
+                      <FaPaperPlane className="my-auto text-ngl_white pl-1" />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

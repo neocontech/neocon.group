@@ -39,7 +39,7 @@ function Feedback() {
   };
   return (
     <>
-      <div className="px-10 xsm:px-5 sm:px-5">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="pb-20">
           <div className="bg-ngl_white rounded-xl p-6 xsm:p-2 sm:p-2">
             <Splide options={splideOptions}>

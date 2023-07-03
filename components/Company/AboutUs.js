@@ -243,8 +243,8 @@ function AboutUs() {
               </button>
             </div>
           </div>
-          <Contact />
         </div>
+        {/* <Contact /> */}
       </div>
     </>
   );

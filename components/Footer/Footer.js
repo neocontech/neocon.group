@@ -18,7 +18,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 function Footer() {
   return (
     <div className="bg-ngl_black">
-      <div className="px-10 xsm:px-5 sm:px-5">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="flex justify-between py-5 ">
           <div>
             <Link href="/">
