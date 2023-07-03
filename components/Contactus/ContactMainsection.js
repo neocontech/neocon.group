@@ -4,10 +4,10 @@ import Tabs from "./Tabs";
 
 function ContactMainsection() {
   return (
-    <div>
+    <>
       <Hero />
       <Tabs/>
-    </div>
+    </>
   );
 }
 

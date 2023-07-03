@@ -5,11 +5,11 @@ import Contact from "../HomePage/Contact";
 
 function CompanyMainsection() {
   return (
-    <div>
+    <>
       <Hero />
       <Tabs />
       <Contact/>
-    </div>
+    </>
   );
 }
 

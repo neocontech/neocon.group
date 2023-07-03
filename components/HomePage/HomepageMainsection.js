@@ -9,14 +9,14 @@ import News from "./News";
 function HomepageMainsection() {
   return (
     <>
-      <div>
+      <>
         <Hero />
         <Feedback />
         <Aboutus />
         <Concerns />
         <News />
         <Contact />
-      </div>
+      </>
     </>
   );
 }
