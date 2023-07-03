@@ -1,18 +1,18 @@
-import BusinessMainsection from "@/components/Business/BusinessMainsection";
+import ContactMainsection from "@/components/Contactus/ContactMainsection";
 import Applayout from "@/components/Layout/Applayout";
 import React from "react";
 import PageHead from "./pageHead";
 
-function business() {
-  const pageTitle = "Neocon Group Limited / Business";
+function ContactUs() {
+  const pageTitle = "Neocon Group Limited / Contact Us";
   return (
     <>
       <PageHead title={pageTitle} />
       <Applayout>
-        <BusinessMainsection />
+        <ContactMainsection />
       </Applayout>
     </>
   );
 }
 
-export default business;
+export default ContactUs;

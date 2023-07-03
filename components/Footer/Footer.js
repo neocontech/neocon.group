@@ -10,15 +10,15 @@ import {
   FaFacebookSquare,
   FaInstagram,
   FaTwitter,
-  FaPhoneVolume,
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 function Footer() {
   return (
-    <div className="bg-ngl_black">
-      <div className="px-10 xsm:px-5 sm:px-5">
+    <><div className="bg-ngl_black">
+      <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
         <div className="flex justify-between py-5 ">
           <div>
             <Link href="/">
@@ -90,24 +90,24 @@ function Footer() {
                   Address
                 </p>
                 <div className="flex flex-col text-base font-regular text-ngl_white">
-                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
+                  <div className="flex flex-row  pb-1">
                     <div className="my-auto w-5">
-                      <FaPhoneVolume />
+                      <BiSolidPhoneCall />
                     </div>
 
-                    <p>+880 9638 232323</p>
+                    <p className="pl-2">+880 9638 232323</p>
                   </div>
-                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
+                  <div className="flex flex-row  pb-1">
                     <div className="my-auto w-5">
                       <IoMdMail />
                     </div>
-                    <p>hello@neocon.tech</p>
+                    <p className="pl-2">hello@neocon.tech</p>
                   </div>
-                  <div className="flex flex-row xsm:flex-col sm:flex-col pb-1">
+                  <div className="flex flex-row  pb-1">
                     <div className="mt-1 w-5">
                       <ImLocation />
                     </div>
-                    <p>
+                    <p className="pl-2">
                       Land View Commercial Center (Level 3), 28.Gulshan North
                       C/A, Gulshan 2, Dhaka 1212Bangladesh.
                     </p>
@@ -128,7 +128,8 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </div></>
+    
   );
 }
 

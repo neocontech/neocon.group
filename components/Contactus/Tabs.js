@@ -3,8 +3,7 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowDownRightCircleFill,
 } from "react-icons/bs";
-import AboutUs from "./AboutUs";
-import Director from "./Director";
+import Contact from "./Contact";
 
 function Tabs() {
   const [openTab, setOpenTab] = useState(1);
@@ -44,7 +43,7 @@ function Tabs() {
                 href="#link1"
                 role="tablist"
               >
-                <p>About Us</p>
+                <p>Contact us</p>
                 {openTab === 1 ? (
                   <BsFillArrowDownRightCircleFill className="my-auto mx-2" />
                 ) : (
@@ -52,37 +51,12 @@ function Tabs() {
                 )}
               </a>
             </li>
-            <li className="mx-5 xsm:min-w-max sm:min-w-max ">
-              <a
-                className={`flex flex-row" ${
-                  openTab === 2
-                    ? "text-ngl_orange"
-                    : "text-ngl_black hover:text-ngl_orange duration-700"
-                }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleTabClick(2);
-                }}
-                href="#link2"
-                role="tablist"
-              >
-                <p>Board of Directors</p>
-                {openTab === 2 ? (
-                  <BsFillArrowDownRightCircleFill className="my-auto mx-2" />
-                ) : (
-                  <BsFillArrowRightCircleFill className="my-auto mx-2" />
-                )}
-              </a>
-            </li>
           </ul>
-          <div className="">
-            <div className=" flex justify-center">
+          <div>
+            <div>
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <AboutUs />
-                </div>
-                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <Director />
+                  <Contact />
                 </div>
               </div>
             </div>
