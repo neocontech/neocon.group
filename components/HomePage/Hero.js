@@ -12,28 +12,28 @@ const SlideList = [
     image: SliderLogo,
 
     header: "Empowering the Future with Technology",
-    date: "20.05.2013",
+    // date: "20.05.2013",
   },
   {
     id: 2,
     image: SliderLogo2,
 
     header: "We Create the Fintech of the Future",
-    date: "20.05.2013",
+    // date: "20.05.2013",
   },
   {
     id: 3,
     image: SliderLogo,
 
     header: "Revolutionizing Internet Services for the Digital Future",
-    date: "20.05.2013",
+    // date: "20.05.2013",
   },
   {
     id: 4,
     image: SliderLogo2,
 
     header: "Next-Generation Stock Market Brokerage Solutions",
-    date: "20.05.2013",
+    // date: "20.05.2013",
   },
 ];
 
@@ -121,7 +121,7 @@ function Hero() {
               </div>
               <p className="text-ngl_gray py-5">
                 Increasing Global Reach: 50 Companies from Across the Globe
-                Choose Us to Modernize their Business Platforms
+                Choose Us to Modernize their Business Platforms.
               </p>
               <div className="flex flex-row pb-2">
                 <p className="text-ngl_orange">4.9</p>
@@ -155,7 +155,7 @@ function Hero() {
                           <p className="text-sm">{slide.date}</p>
                         </div>
 
-                        <div >
+                        <div>
                           <Image
                             src={slide.image}
                             alt="slider img"
@@ -207,8 +207,8 @@ function Hero() {
                 <p className="text-ngl_orange text-text_56">50</p>
               </div>
               <p className="text-ngl_gray py-5">
-                Already 125 companies around the world have approached us to
-                modernize their business platform.
+                Increasing Global Reach: 50 Companies from Across the Globe
+                Choose Us to Modernize their Business Platforms
               </p>
               <div className="flex flex-row pb-2">
                 <p className="text-ngl_orange">4.9</p>
