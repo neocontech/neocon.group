@@ -110,12 +110,12 @@ function News() {
               >
                 <div className="relative">
                   <Image
-                    src={news1}
+                    src={news.image}
                     alt="news img png"
                     className="w-[391px] h-[191px]"
                   />
-                  <p className="absolute bottom-0 text-ngl_white text-2xl font-bold p-6 rounded-bl-3xl bg-gradient-to-r from-ngl_black to-ngl_white/5">
-                    The daily star
+                  <p className="absolute w-1/2 leading-tight bottom-0 text-ngl_white text-2xl font-bold p-6 rounded-bl-3xl bg-gradient-to-r from-ngl_black to-ngl_white/5">
+                    {news.name}
                   </p>
                   <p className="hidden">{news.tag}</p>
                 </div>
