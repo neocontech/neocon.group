@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Hero from "./Hero";
 
 function NewsMainSection() {
   return (
-    <div>NewsMainSection</div>
-  )
+    <>
+      <Hero />
+    </>
+  );
 }
 
-export default NewsMainSection
+export default NewsMainSection;
