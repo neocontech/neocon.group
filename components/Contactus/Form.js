@@ -165,7 +165,6 @@ function Form() {
             disabled={submitting}
           >
             <p>{submitting ? "Submitting..." : "Submit your message"}</p>
-            {/* <p>Submit your message</p> */}
           </button>
         </div>
         {/*  */}
@@ -180,7 +179,15 @@ function Form() {
             {submissionMessage}
           </div>
         )}
-        {/* <div>
+      </form>
+    </>
+  );
+}
+
+export default Form;
+
+{
+  /* <div>
           <p className="text-sm text-ngl_gray_3 font-regular ">
             Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus
             condimentum non viverra consequat sit. Diam sed nec egestas ut morbi
@@ -191,14 +198,5 @@ function Form() {
             </strong>
             .
           </p>
-        </div> */}
-      </form>
-    </>
-  );
-}
-
-export default Form;
-
-{
-  /* ; */
+        </div> */
 }
