@@ -10,7 +10,7 @@ function Contact() {
         <div className="pt-20">
           <div>
             <div className="grid grid-rows-3 xsm:grid-rows-none xsm:grid-cols-1 xsm:grid-flow-row sm:grid-rows-none sm:grid-cols-1 sm:grid-flow-row grid-flow-col gap-4 w-full">
-              <div className="row-span-2 xsm:row-span-1 xsm:col-span-1 sm:row-span-1 sm:col-span-1 col-span-2">
+              <div className="row-span-2 xsm:row-span-1  sm:row-span-1  ">
                 <p className="text-41xl xsm:text-3xl sm:text-3xl font-semibold text-ngl_black w-3/5 xsm:w-full sm:w-full">
                   Build better communication for better
                   <span className="text-ngl_orange "> Business</span>
@@ -43,7 +43,7 @@ function Contact() {
                   </p>
                 </div>
               </div>
-              <div className="row-span-3  xsm:row-span-1 sm:row-span-1">
+              <div className="row-span-3 col-span-2 xsm:col-span-1 sm:col-span-1  xsm:row-span-1 sm:row-span-1">
                 <Form />
               </div>
             </div>

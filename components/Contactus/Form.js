@@ -1,9 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Form() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [inquiry, setInquiry] = useState("");
+  const [reason, setReason] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [submissionMessage, setSubmissionMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({ name, email, phoneNumber, inquiry, reason }),
+        }
+      );
+
+      if (response.ok) {
+        setSubmissionMessage("Form submitted successfully!");
+        // Reset form fields
+        setName("");
+        setEmail("");
+        setPhoneNumber("");
+        setInquiry("");
+        setReason("");
+      } else {
+        setSubmissionMessage("An error occurred. Please try again.");
+      }
+    } catch (error) {
+      setSubmissionMessage("An error occurred. Please try again.");
+    }
+
+    setSubmitting(false);
+  };
   return (
     <>
-      <form className="bg-ngl_white px-6 py-16 rounded-xl border border-ngl_orange w-4/5 xsm:w-full sm:w-full ">
+      <form className="bg-ngl_white px-6 py-16 rounded-xl border border-ngl_orange w-full xsm:w-full sm:w-full ">
         <div className="flex flex-col relative mb-6">
           <label
             htmlFor="name"
@@ -16,7 +58,10 @@ function Form() {
             name="name"
             type="text"
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
-            placeholder="Enter your email address"
+            placeholder="Enter your Full name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="flex flex-col relative mb-6">
@@ -31,7 +76,10 @@ function Form() {
             name="email"
             type="email"
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
-            placeholder="Enter your email address"
+            placeholder="Enter your Email address"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="flex flex-col relative mb-6">
@@ -47,8 +95,10 @@ function Form() {
             type="tel"
             pattern="[0-9]{10}"
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
-            placeholder="Enter your mobile number"
+            placeholder="Enter your Mobile number"
             required
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
           />
         </div>
 
@@ -59,12 +109,29 @@ function Form() {
           >
             Inquiry
           </label>
+          {/* <select
+            id="inquiry"
+            name="inquiry"
+            className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
+            value={inquiry}
+            onChange={(e) => setInquiry(e.target.value)}
+          >
+            <option value="" disabled selected>
+              Select your inquiry
+            </option>
+            <option value="ksl">Kabir Securities Limited</option>
+            <option value="ntl">Neocon Technologies Limited</option>
+            <option value="nil">Neocon Innovations Limited</option>
+            <option value="ngl">Neocon Gateway Limited</option>
+          </select> */}
           <select
             id="inquiry"
             name="inquiry"
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
+            value={inquiry}
+            onChange={(e) => setInquiry(e.target.value)}
           >
-            <option value="" disabled selected>
+            <option value="" disabled>
               Select your inquiry
             </option>
             <option value="ksl">Kabir Securities Limited</option>
@@ -87,14 +154,33 @@ function Form() {
             rows={4}
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
             placeholder="Describe your Inquiry!"
+            value={reason}
+            onChange={(e) => setReason(e.target.value)}
           ></textarea>
         </div>
-        <div className="mb-6">
-          <button className="bg-ngl_black text-ngl_white text-base font-medium p-4 rounded-xl">
-            <p>Submit your message</p>
+        <div className="mb-6 text-center">
+          <button
+            className="bg-ngl_black text-ngl_white text-base font-medium p-4 rounded-xl "
+            onClick={handleSubmit}
+            disabled={submitting}
+          >
+            <p>{submitting ? "Submitting..." : "Submit your message"}</p>
+            {/* <p>Submit your message</p> */}
           </button>
         </div>
-        <div>
+        {/*  */}
+        {submissionMessage && (
+          <div
+            className={
+              submissionMessage.includes("error")
+                ? "text-ngl_white bg-ngl_orange rounded-3xl p-4 text-center"
+                : "text-ngl_white bg-ngl_black rounded-3xl p-4 text-center"
+            }
+          >
+            {submissionMessage}
+          </div>
+        )}
+        {/* <div>
           <p className="text-sm text-ngl_gray_3 font-regular ">
             Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus
             condimentum non viverra consequat sit. Diam sed nec egestas ut morbi
@@ -105,10 +191,14 @@ function Form() {
             </strong>
             .
           </p>
-        </div>
+        </div> */}
       </form>
     </>
   );
 }
 
 export default Form;
+
+{
+  /* ; */
+}

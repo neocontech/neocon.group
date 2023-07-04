@@ -26,7 +26,7 @@ function AboutUs() {
       <div>
         <div className="pt-20">
           <div className="grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-1 gap-6 pb-20">
-            <div>
+            <div className="my-auto">
               <video
                 className="w-auto h-auto rounded-3xl"
                 controls
