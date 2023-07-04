@@ -29,7 +29,7 @@ function Contact() {
                 <div className="pb-2">
                   <p className="text-ngl_black text-lg font-semibold">Email</p>
                   <p className="text-sm font-regular text-ngl_orange cursor-pointer underline">
-                    hello@neoconinnovations.com
+                    hello@neocongroup.com
                   </p>
                 </div>
                 <div>

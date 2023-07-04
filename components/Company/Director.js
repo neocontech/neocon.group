@@ -13,9 +13,7 @@ const DirectorList = [
       "Our Honorable Chairperson Rowshan Ara Alam is a highly respected and passionate in the technology industry, serving as the Chairperson of Neocon Group. With her dynamic leadership, she has steered the company towards achieving its strategic goals. A true visionary, she has a keen understanding of the rapidly changing technology landscape and is always looking for new and innovative ways to drive growth and create value for the company's stakeholders.",
     comment2:
       "Hard work is the foundation of any successful organization. It is the unwavering dedication to excellence, the determination to achieve greatness, and the perseverance to overcome challenges that define us as individuals and as a company.",
-    // header:
-    //   "“We manage too many people to    constantly be searching for stuff",
-    // subheader: "81% SAY THEIR TEAMWORK IS MORE EFFICIENT",
+
     image: Rowshan,
   },
   {
@@ -23,12 +21,9 @@ const DirectorList = [
     name: "MOHAMMED ALAMGIR KABIR",
     designation: "Chairman",
     comment:
-      "Our Honorable Chairman, Mohammed Alamgir Kabir, has been the driving force behind Neocon Group’s remarkable journey from a beginning to a leading software company. With his far-sighted vision and inspiring leadership, he has led organization through numerous challenges and opportunities, ensuring that we stay ahead of the curve in a constantly evolving technological landscape.",
+      "Under the exceptional leadership of our Honorable Managing Director, Mohammed Alamgir Kabir, Neocon Group has embarked on a remarkable journey, transforming from its humble beginnings into a leading conglomerate encompassing diverse businesses such as software development, stock market brokerage, data centers, internet services, and more.",
     comment2:
-      "At Neocon Group, we are committed to providing our clients with cutting-edge technology solutions that help them achieve clients business goals. We believe that our success is directly tied to the success of our clients, and we are dedicated to building long-lasting partnerships that drive growth and innovation.",
-    // header:
-    //   "“We manage too many people to    constantly be searching for stuff",
-    // subheader: "81% SAY THEIR TEAMWORK IS MORE EFFICIENT",
+      "At Neocon Group, we are committed to providing our clients with cutting-edge technology solutions that help them achieve clients business goals. We believe that our success is directly tied to the success of our clients, and we are dedicated to building long-lasting partnerships that drive growth and innovation",
     image: Alamgir,
   },
 
@@ -37,12 +32,9 @@ const DirectorList = [
     name: "MOHAMMED SHADMAN KABIR",
     designation: "Managing Director",
     comment:
-      "Honorable Managing Director, Mohammed Shadman Kabir is a passionate leader who provides a modern vision to the company. He completed his graduation from the University of New South Wales, Sydney, Australia, in the field of Accounting and Marketing. He has also pursued an offshore Professional Year from Navitas Professional Australia.",
+      "Honorable Deputy Managing Director, Mohammed Shadman Kabir is a passionate leader who provides a modern vision to the company. He completed his graduation from the University of New South Wales, Sydney, Australia, in the field of Accounting and Marketing. He has also pursued an offshore Professional Year from Navitas Professional Australia.",
     comment2:
-      "Technical innovation is the flagbearer of excellence, and at Neocon Group, we have always been at the forefront of this movement. From our humble beginnings as a dynamic start-up to our position today as a market-leading software development company, we have remained steadfast in our commitment to providing cutting-edge solutions to our clients.",
-    // header:
-    //   "“We manage too many people to    constantly be searching for stuff",
-    // subheader: "81% SAY THEIR TEAMWORK IS MORE EFFICIENT",
+      "Neocon Group has consistently embraced technical innovation as a symbol of excellence, driving our journey from a dynamic start-up to a renowned market leader. Throughout our evolution, which encompasses various businesses such as stock market brokerage, software development, data centers, internet services, and more, we have remained unwavering in our dedication to delivering state-of-the-art solutions to our valued clients.",
     image: Shadman,
   },
   {
@@ -53,9 +45,6 @@ const DirectorList = [
       "Honorable Director Sabbria Kabir is a potential leader. She is graduating from Taylor's University, Malaysia. Besides being an ambitious individual she has a broader mindset in business.",
     comment2:
       "We firmly believe that Innovative technologies will build a productive business system for overall growth, and that it is only through the power of technology that we can truly empower people.The hard work and dedication of each and every member of the Neocon Group family that we have been able to achieve.",
-    // header:
-    //   "“We manage too many people to    constantly be searching for stuff",
-    // subheader: "81% SAY THEIR TEAMWORK IS MORE EFFICIENT",
     image: Sabbria,
   },
 ];
@@ -107,7 +96,7 @@ function Director() {
                             {director.comment}
                           </p>
                           <p className="text-base font-regular text-ngl_gray_3 p-2 mb-3">
-                            {director.comment2}
+                            "{director.comment2}"
                           </p>
                         </div>
                         <div className="flex flex-row xsm:flex-col sm:flex-col">

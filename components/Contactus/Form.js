@@ -6,7 +6,7 @@ function Form() {
       <form className="bg-ngl_white px-6 py-16 rounded-xl border border-ngl_orange w-4/5 xsm:w-full sm:w-full ">
         <div className="flex flex-col relative mb-6">
           <label
-            for="name"
+            htmlFor="name"
             className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
           >
             Name
@@ -21,7 +21,7 @@ function Form() {
         </div>
         <div className="flex flex-col relative mb-6">
           <label
-            for="email"
+            htmlFor="email"
             className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
           >
             Email
@@ -36,7 +36,7 @@ function Form() {
         </div>
         <div className="flex flex-col relative mb-6">
           <label
-            for="mobile"
+            htmlFor="mobile"
             className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
           >
             Phone
@@ -54,7 +54,7 @@ function Form() {
 
         <div className="flex flex-col relative mb-6">
           <label
-            for="inquiry"
+            htmlFor="inquiry"
             className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
           >
             Inquiry
@@ -76,7 +76,7 @@ function Form() {
 
         <div className="flex flex-col relative mb-6">
           <label
-            for="description"
+            htmlFor="description"
             className="text-xsm font-medium text-ngl_orange z-10 absolute top-0 -mt-2.5 bg-ngl_white ml-5"
           >
             Describe your Inquiry!
