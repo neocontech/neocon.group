@@ -3,10 +3,13 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowDownRightCircleFill,
 } from "react-icons/bs";
-import AboutUs from "./AboutUs";
 import Director from "./Director";
+import AboutUs from "./AboutUs";
 
 function Tabs() {
+  const [director, setDirector] = useState([]);
+  // const [team, setTeam] = useState([]);
+
   const [openTab, setOpenTab] = useState(1);
   const tabContainerRef = useRef(null);
   useEffect(() => {
@@ -22,6 +25,34 @@ function Tabs() {
   const handleTabClick = (tabNumber) => {
     setOpenTab(tabNumber);
   };
+  async function fetchEmp() {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/employee`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(data);
+      setDirector(
+        data.filter((employee) => employee.type === "director")
+      );
+      // setTeam(
+      //   data.filter((employee) => employee.type === "management_team")
+      // );
+    } catch (error) {
+      console.error("Error fetching employee data:", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchEmp();
+  }, []);
+  
   return (
     <>
       <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
@@ -79,10 +110,10 @@ function Tabs() {
             <div className=" flex justify-center">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <AboutUs />
+                  <AboutUs/>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <Director />
+                  <Director data={director} />
                 </div>
               </div>
             </div>

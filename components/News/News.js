@@ -5,49 +5,48 @@ import {
   BsFillArrowDownRightCircleFill,
 } from "react-icons/bs";
 import news1 from "../../public/assets/news/news.png";
-const newsData = [
-  {
-    id: 1,
-    tag: "Tech",
-    header: "Tech News Header",
-    content: "Tech news content",
-    name: "The Daily Star",
-    image: news1,
-  },
-  {
-    id: 2,
-    tag: "New",
-    header: "New News Header",
-    content: "New news content",
-    name: "The Daily Star",
-    image: news1,
-  },
-  {
-    id: 3,
-    tag: "New2",
-    header: "New News Header",
-    content: "New news content",
-    name: "The Daily Star",
-    image: news1,
-  },
-  {
-    id: 4,
-    tag: "New3",
-    header: "New News Header",
-    content: "New news content",
-    name: "The Daily Star",
-    image: news1,
-  },
-  {
-    id: 5,
-    tag: "New4",
-    header: "New News Header",
-    content: "New news content",
-    name: "The Daily Star",
-    image: news1,
-  },
-
-];
+// const newsData = [
+//   {
+//     id: 1,
+//     tag: "Tech",
+//     header: "Tech News Header",
+//     content: "Tech news content",
+//     name: "The Daily Star",
+//     image: news1,
+//   },
+//   {
+//     id: 2,
+//     tag: "New",
+//     header: "New News Header",
+//     content: "New news content",
+//     name: "The Daily Star",
+//     image: news1,
+//   },
+//   {
+//     id: 3,
+//     tag: "New2",
+//     header: "New News Header",
+//     content: "New news content",
+//     name: "The Daily Star",
+//     image: news1,
+//   },
+//   {
+//     id: 4,
+//     tag: "New3",
+//     header: "New News Header",
+//     content: "New news content",
+//     name: "The Daily Star",
+//     image: news1,
+//   },
+//   {
+//     id: 5,
+//     tag: "New4",
+//     header: "New News Header",
+//     content: "New news content",
+//     name: "The Daily Star",
+//     image: news1,
+//   },
+// ];
 
 function News() {
   const [activeFilter, setActiveFilter] = useState("All");
