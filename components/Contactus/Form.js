@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios";
-
+import React, { useEffect, useState } from "react";
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -9,25 +7,15 @@ function Form() {
   const [reason, setReason] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submissionMessage, setSubmissionMessage] = useState("");
-
-  const csrf = () =>
-    axios.get(process.env.NEXT_PUBLIC_BACKEND_URL + "/sanctum/csrf-cookie");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     console.log("Submitting form data...");
+
     try {
       const requestData = { name, email, phoneNumber, inquiry, reason };
       console.log("Form Data:", requestData);
-      // await csrf();
-      // axios
-      //   .post("/user", requestData)
-      //   .then(function (response) {
-      //     console.log(response);
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error);
-      //   });
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
         {
@@ -36,7 +24,6 @@ function Form() {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          // body: JSON.stringify({ name, email, phoneNumber, inquiry, reason }),
           body: JSON.stringify(requestData),
         }
       );
@@ -58,6 +45,7 @@ function Form() {
 
     setSubmitting(false);
   };
+
   return (
     <>
       <form className="bg-ngl_white px-6 py-16 rounded-xl border border-ngl_orange w-full xsm:w-full sm:w-full ">
@@ -201,3 +189,57 @@ export default Form;
           </p>
         </div> */
 }
+
+// const [name, setName] = useState("");
+// const [email, setEmail] = useState("");
+// const [phoneNumber, setPhoneNumber] = useState("");
+// const [inquiry, setInquiry] = useState("");
+// const [reason, setReason] = useState("");
+// const [submitting, setSubmitting] = useState(false);
+// const [submissionMessage, setSubmissionMessage] = useState("");
+
+// useEffect(() => {
+//   // Fetch CSRF token when the component mounts
+//   fetchCsrfToken();
+// }, []);
+
+// const fetchCsrfToken = async () => {
+//   try {
+//     await axios.get(
+//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/sanctum/csrf-cookie`
+//     );
+//   } catch (error) {
+//     console.log("Failed to fetch CSRF token:", error);
+//   }
+// };
+
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   setSubmitting(true);
+//   console.log("Submitting form data...");
+//   try {
+//     const requestData = { name, email, phoneNumber, inquiry, reason };
+//     console.log("Form Data:", requestData);
+
+//     const response = await axios.post(
+//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
+//       requestData
+//     );
+
+//     if (response.status === 200) {
+//       setSubmissionMessage("Form submitted successfully!");
+//       // Reset form fields
+//       setName("");
+//       setEmail("");
+//       setPhoneNumber("");
+//       setInquiry("");
+//       setReason("");
+//     } else {
+//       setSubmissionMessage("An error occurred. Please try again.");
+//     }
+//   } catch (error) {
+//     setSubmissionMessage("An error occurred. Please try again.");
+//   }
+
+//   setSubmitting(false);
+// };
