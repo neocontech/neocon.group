@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function Form() {
   const [name, setName] = useState("");
@@ -9,20 +10,34 @@ function Form() {
   const [submitting, setSubmitting] = useState(false);
   const [submissionMessage, setSubmissionMessage] = useState("");
 
+  const csrf = () =>
+    axios.get(process.env.NEXT_PUBLIC_BACKEND_URL + "/sanctum/csrf-cookie");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-
+    console.log("Submitting form data...");
     try {
+      const requestData = { name, email, phoneNumber, inquiry, reason };
+      console.log("Form Data:", requestData);
+      // await csrf();
+      // axios
+      //   .post("/user", requestData)
+      //   .then(function (response) {
+      //     console.log(response);
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error);
+      //   });
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          body: JSON.stringify({ name, email, phoneNumber, inquiry, reason }),
+          // body: JSON.stringify({ name, email, phoneNumber, inquiry, reason }),
+          body: JSON.stringify(requestData),
         }
       );
 
@@ -109,21 +124,7 @@ function Form() {
           >
             Inquiry
           </label>
-          {/* <select
-            id="inquiry"
-            name="inquiry"
-            className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
-            value={inquiry}
-            onChange={(e) => setInquiry(e.target.value)}
-          >
-            <option value="" disabled selected>
-              Select your inquiry
-            </option>
-            <option value="ksl">Kabir Securities Limited</option>
-            <option value="ntl">Neocon Technologies Limited</option>
-            <option value="nil">Neocon Innovations Limited</option>
-            <option value="ngl">Neocon Gateway Limited</option>
-          </select> */}
+
           <select
             id="inquiry"
             name="inquiry"
