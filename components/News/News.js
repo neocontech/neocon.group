@@ -117,7 +117,7 @@ function News() {
                   alt="news img png"
                   width={391}
                   height={191}
-                  className="w-[391px] h-[191px]"
+                  className="w-[391px] h-[191px] rounded-3xl"
                 />
                 <p className="absolute w-1/2 leading-tight bottom-0 text-ngl_white text-2xl font-bold p-6 rounded-bl-3xl bg-gradient-to-r from-ngl_black to-ngl_white/5">
                   {news.name}

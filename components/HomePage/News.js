@@ -4,55 +4,34 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { BiSquareRounded } from "react-icons/bi";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import news1 from "../../public/assets/news/news.png";
-
-const NewsList = [
-  {
-    id: 1,
-    image: news1,
-    header: "Neocon Technologies Made First AI Trade Bot For BD Stock Market",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Ultrices amet feugiat praesent eu tincidunt commodo lacus ornare in.",
-    name: "The Business standard",
-  },
-  {
-    id: 2,
-    image: news1,
-    header: "Neocon Technologies Made First AI Trade Bot For BD Stock Market",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Ultrices amet feugiat praesent eu tincidunt commodo lacus ornare in.",
-    name: "The Business standard",
-  },
-  {
-    id: 3,
-    image: news1,
-    header: "Neocon Technologies Made First AI Trade Bot For BD Stock Market",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Ultrices amet feugiat praesent eu tincidunt commodo lacus ornare in.",
-    name: "The Business standard",
-  },
-  {
-    id: 4,
-    image: news1,
-    header: "Neocon Technologies Made First AI Trade Bot For BD Stock Market",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Ultrices amet feugiat praesent eu tincidunt commodo lacus ornare in.",
-    name: "The Business standard",
-  },
-  {
-    id: 5,
-    image: news1,
-    header: "Neocon Technologies Made First AI Trade Bot For BD Stock Market",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Ultrices amet feugiat praesent eu tincidunt commodo lacus ornare in.",
-    name: "The Business standard",
-  },
-];
 
 function News() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showArrows, setShowArrows] = useState(true);
   const [perPage, setPerPage] = useState(4);
+  const [newsList, setnewsList] = useState([]);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/news`,
+          {
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+          }
+        );
+        const data = await response.json();
+        setnewsList(data);
+      } catch (error) {
+        console.error("Error fetching booth data:", error);
+      }
+    };
+
+    fetchNews();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -106,14 +85,20 @@ function News() {
 
               <div>
                 <Splide options={splideOptions} className="xsm:px-0 sm:px-0">
-                  {NewsList.map((news, index) => (
+                  {newsList.map((news, index) => (
                     <SplideSlide key={index}>
                       <div className="bg-ngl_white rounded-3xl w-[391px] xsm:w-auto sm:w-auto xsm:mx-5 sm:mx-5 h-auto">
                         <div className="relative">
                           <Image
-                            src={news.image}
+                            src={
+                              process.env.NEXT_PUBLIC_BACKEND_URL +
+                              "/storage/" +
+                              news.image
+                            }
                             alt="news img png"
-                            className="w-[391px] h-[191px]"
+                            width={391}
+                            height={191}
+                            className="w-[391px] h-[191px] rounded-3xl"
                           />
                           <p className="w-1/2 leading-tight absolute bottom-0 text-ngl_white text-2xl font-bold p-6 rounded-bl-3xl bg-gradient-to-r from-ngl_black to-ngl_white/5">
                             {news.name}
