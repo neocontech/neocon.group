@@ -10,11 +10,11 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    console.log("Submitting form data...");
+    // console.log("Submitting form data...");
 
     try {
       const requestData = { name, email, phoneNumber, inquiry, reason };
-      console.log("Form Data:", requestData);
+      // console.log("Form Data:", requestData);
 
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
@@ -124,9 +124,9 @@ function Form() {
               Select your inquiry
             </option>
             <option value="ksl">Kabir Securities Limited</option>
-            <option value="ntl">Neocon Technologies Limited</option>
-            <option value="nil">Neocon Innovations Limited</option>
-            <option value="ngl">Neocon Gateway Limited</option>
+            <option value="technologies">Neocon Technologies Limited</option>
+            <option value="innovations">Neocon Innovations Limited</option>
+            <option value="gateway">Neocon Gateway Limited</option>
           </select>
         </div>
 

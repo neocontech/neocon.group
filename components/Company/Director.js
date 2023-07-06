@@ -5,9 +5,8 @@ import Rowshan from "../../public/assets/director/Rowshan-Ara.png";
 import Shadman from "../../public/assets/director/Shadman-Kabir.png";
 import Sabbria from "../../public/assets/director/Sabbria-Kabir.png";
 
-
 function Director({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <div>
@@ -97,8 +96,6 @@ export default Director;
                           {director.header}
                         </p> */
 }
-
-
 
 // const DirectorList = [
 //   {

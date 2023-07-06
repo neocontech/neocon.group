@@ -37,10 +37,8 @@ function Tabs() {
         }
       );
       const data = await response.json();
-      console.log(data);
-      setDirector(
-        data.filter((employee) => employee.type === "director")
-      );
+      // console.log(data);
+      setDirector(data.filter((employee) => employee.type === "director"));
       // setTeam(
       //   data.filter((employee) => employee.type === "management_team")
       // );
@@ -52,7 +50,7 @@ function Tabs() {
   useEffect(() => {
     fetchEmp();
   }, []);
-  
+
   return (
     <>
       <div className="px-10 2xl:px-80 xsm:px-5 sm:px-5">
@@ -110,7 +108,7 @@ function Tabs() {
             <div className=" flex justify-center">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <AboutUs/>
+                  <AboutUs />
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <Director data={director} />
