@@ -106,14 +106,33 @@ function News() {
                         </div>
                         <div className="flex flex-col p-5">
                           <p className="text-ngl_black text-2xl leading-tight font-semibold pb-3">
-                            {news.header}
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: news.title
+                                  .split(" ")
+                                  .slice(0, 10)
+                                  .join(" "),
+                              }}
+                            ></div>
                           </p>
                           <p className="text-base font-regular text-ngl_black">
-                            {news.content}
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: news.description
+                                  .split(" ")
+                                  .slice(0, 10)
+                                  .join(" "),
+                              }}
+                            ></div>
                           </p>
                           <div className="flex justify-end pt-3">
                             <div className="flex flex-row">
-                              <p className="px-5">Read more</p>
+                              <button
+                                className="px-5"
+                                onClick={() => handleReadMoreClick(news.link)}
+                              >
+                                Read more
+                              </button>
                               <BsFillArrowRightCircleFill className="my-auto" />
                             </div>
                           </div>
