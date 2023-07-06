@@ -87,7 +87,7 @@ function News() {
                 <Splide options={splideOptions} className="xsm:px-0 sm:px-0">
                   {newsList.map((news, index) => (
                     <SplideSlide key={index}>
-                      <div className="bg-ngl_white rounded-3xl w-[391px] xsm:w-auto sm:w-auto xsm:mx-5 sm:mx-5 h-auto">
+                      <div className="bg-ngl_white rounded-3xl w-[391px] xsm:w-auto sm:w-auto xsm:mx-5 sm:mx-5 h-full">
                         <div className="relative">
                           <Image
                             src={
