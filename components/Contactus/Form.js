@@ -93,8 +93,8 @@ function Form() {
             Phone
           </label>
           <input
-            id="mobile"
-            name="mobile"
+            id="phoneNumber"
+            name="phoneNumber"
             type="tel"
             pattern="[0-9]{10}"
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
@@ -138,8 +138,8 @@ function Form() {
             Describe your Inquiry!
           </label>
           <textarea
-            id="description"
-            name="description"
+            id="reason"
+            name="reason"
             rows={4}
             className="px-4 py-2 border border-ngl_gray rounded-xl focus:outline-none text-sm"
             placeholder="Describe your Inquiry!"
@@ -174,72 +174,3 @@ function Form() {
 }
 
 export default Form;
-
-{
-  /* <div>
-          <p className="text-sm text-ngl_gray_3 font-regular ">
-            Neocon ipsum dolor sit amet consectetur. Dui amet tempor faucibus
-            condimentum non viverra consequat sit. Diam sed nec egestas ut morbi
-            rhoncus sed nec egestas ut morbi{" "}
-            <strong className="underline text-ngl_black">
-              {" "}
-              Privacy Policy
-            </strong>
-            .
-          </p>
-        </div> */
-}
-
-// const [name, setName] = useState("");
-// const [email, setEmail] = useState("");
-// const [phoneNumber, setPhoneNumber] = useState("");
-// const [inquiry, setInquiry] = useState("");
-// const [reason, setReason] = useState("");
-// const [submitting, setSubmitting] = useState(false);
-// const [submissionMessage, setSubmissionMessage] = useState("");
-
-// useEffect(() => {
-//   // Fetch CSRF token when the component mounts
-//   fetchCsrfToken();
-// }, []);
-
-// const fetchCsrfToken = async () => {
-//   try {
-//     await axios.get(
-//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/sanctum/csrf-cookie`
-//     );
-//   } catch (error) {
-//     console.log("Failed to fetch CSRF token:", error);
-//   }
-// };
-
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   setSubmitting(true);
-//   console.log("Submitting form data...");
-//   try {
-//     const requestData = { name, email, phoneNumber, inquiry, reason };
-//     console.log("Form Data:", requestData);
-
-//     const response = await axios.post(
-//       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
-//       requestData
-//     );
-
-//     if (response.status === 200) {
-//       setSubmissionMessage("Form submitted successfully!");
-//       // Reset form fields
-//       setName("");
-//       setEmail("");
-//       setPhoneNumber("");
-//       setInquiry("");
-//       setReason("");
-//     } else {
-//       setSubmissionMessage("An error occurred. Please try again.");
-//     }
-//   } catch (error) {
-//     setSubmissionMessage("An error occurred. Please try again.");
-//   }
-
-//   setSubmitting(false);
-// };
