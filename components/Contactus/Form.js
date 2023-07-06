@@ -17,7 +17,7 @@ function Form() {
       // console.log("Form Data:", requestData);
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact/store`,
         {
           method: "POST",
           headers: {
