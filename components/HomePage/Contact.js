@@ -9,14 +9,14 @@ function Contact() {
         <div className="py-20">
           <div className="flex flex-row">
             <div className="w-5 block xsm:hidden sm:hidden">
-              <BiSquareRounded size={20} className="text-ngl_orange mt-7 " />
+              {/* <BiSquareRounded size={20} className="text-ngl_orange mt-7 " /> */}
             </div>
 
             <div className="w-full">
               <div className="px-5">
-                <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
+                {/* <p className="text-text_51 text-ngl_black font-semibold xsm:text-32xl sm:text-32xl">
                   Contact With Us
-                </p>
+                </p> */}
               </div>
 
               <div className="bg-ngl_white rounded-xl p-6 flex justify-between xsm:flex-col sm:flex-col w-full">
@@ -28,7 +28,7 @@ function Contact() {
                   <Link href="/contact-us">
                     <button className="flex flex-row bg-ngl_black py-3 px-10 rounded-xl xsm:mx-auto sm:mx-auto">
                       <p className="text-base font-regular text-ngl_white">
-                        Contact With Us
+                        Contact Us
                       </p>
                       <FaPaperPlane className="my-auto text-ngl_white pl-1" />
                     </button>

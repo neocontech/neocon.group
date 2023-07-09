@@ -163,18 +163,3 @@ function News() {
 }
 
 export default News;
-
-// const scrollToActiveTab = () => {
-//   if (tabContainerRef.current) {
-//     const containerWidth = tabContainerRef.current.clientWidth;
-//     const activeTab = tabContainerRef.current.querySelector(".active");
-//     const activeTabWidth = activeTab.clientWidth;
-//     const activeTabOffset = activeTab.offsetLeft;
-//     const scrollPosition =
-//       activeTabOffset - containerWidth / 2 + activeTabWidth / 2;
-//     tabContainerRef.current.scrollTo({
-//       left: scrollPosition,
-//       behavior: "smooth",
-//     });
-//   }
-// };

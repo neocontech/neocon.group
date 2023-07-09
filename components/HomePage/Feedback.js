@@ -3,26 +3,26 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import feedImg from "../../public/assets/feedback/feedbackimg.png";
-import Signature from "../../public/assets/feedback/signature.png";
+import feedImg from "../../public/assets/director/Alamgir-Kabir.png";
+// import Signature from "../../public/assets/feedback/signature.png";
 const FeedbackList = [
   {
     id: 1,
     image: feedImg,
-    sigimage: Signature,
+    // sigimage: Signature,
     comment:
       "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
     name: "MOHAMMED ALAMGIR KABIR ",
-    designation:"Chairman, Neocon Group"
+    designation: "Chairman, Neocon Group",
   },
   {
     id: 2,
     image: feedImg,
-    sigimage: Signature,
+    // sigimage: Signature,
     comment:
       "At Neocon Group, we believe that collaboration is the key to success. We actively seek out partnerships and alliances that foster knowledge exchange and inspire creativity. Together, we can push the boundaries of what is possible and create lasting impact in the digital realm. As the Chairman, I am fully committed to upholding our core values of integrity, excellence, and customer-centricity. We are dedicated to building strong relationships based on trust, reliability, and transparency. Our clients and partners are at the heart of everything we do, and their success is our ultimate measure of achievement. Thank you for your unwavering support and trust in Neocon Group. I look forward to the remarkable milestones we will achieve together.",
     name: "MOHAMMED ALAMGIR KABIR ",
-    designation:"Chairman, Neocon Group"
+    designation: "Chairman, Neocon Group",
   },
 ];
 
@@ -53,7 +53,7 @@ function Feedback() {
                         <Image
                           src={feed.image}
                           alt="feedback image"
-                          className="w-auto h-auto py-2 pl-2"
+                          className="w-auto h-auto p-2  rounded-2xl"
                         />
                       </div>
                     </div>
@@ -70,11 +70,6 @@ function Feedback() {
                         <FaQuoteRight size={30} className="text-ngl_orange" />
                       </div>
 
-                      {/* <Image
-                        src={feed.sigimage}
-                        alt="signature png"
-                        className="w-40 h-auto mx-auto"
-                      /> */}
                       <p className="text-lg font-semibold text-ngl_black text-center">
                         {feed.name}
                       </p>

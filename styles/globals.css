@@ -63,7 +63,6 @@
   background-color: white;
   height: 50px;
   width: 50px;
-
 }
 .custom-splide .splide__arrow svg {
   fill: white;
@@ -77,7 +76,6 @@
     width: 40px;
     margin-left: -26px;
     margin-right: -26px;
-
   }
   .custom-splide .splide__arrow svg {
     fill: white;
@@ -87,4 +85,8 @@
   .custom-splide .splide__pagination {
     bottom: -2em;
   }
+}
+.img_b {
+  border-style: solid;
+  border-color: red;
 }
