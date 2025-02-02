@@ -23,7 +23,7 @@ function Contact() {
                   </p>
                   <div className="flex flex-row text-lg font-semibold">
                     <BiSolidPhoneCall className="my-auto text-ngl_orange" />
-                    <p className="text-ngl_black pl-2">+880 9638-232323</p>
+                    <p className="text-ngl_black pl-2">02-41355771</p>
                   </div>
                 </div>
                 <div className="pb-2">
