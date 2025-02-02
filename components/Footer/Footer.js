@@ -95,7 +95,7 @@ function Footer() {
                       <BiSolidPhoneCall />
                     </div>
 
-                    <p className="pl-2">+880 9638 232323</p>
+                    <p className="pl-2">+8802-41355771</p>
                   </div>
                   <div className="flex flex-row  pb-1">
                     <div className="my-auto w-5">
